@@ -1,4 +1,3 @@
-const { members: sql } = require('../sql');
 
 class MembersRepository {
   constructor(db, pgp) {
@@ -6,11 +5,7 @@ class MembersRepository {
     this.pgp = pgp;
   }
   async create(values) {
-    return this.db.one(sql.create, {
-      ...values,
-      enrolled_year: +values.year,
-      enrolled_month: +values.month
-    });
+    return this.db.one('', { ...values, enrolled_year: +values.year, enrolled_month: +values.month });
   }
 
   async readAll() {

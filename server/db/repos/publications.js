@@ -1,13 +1,10 @@
-const { publications: sql } = require('../sql');
-
 class PublicationsRepository {
   constructor(db, pgp) {
     this.db = db;
     this.pgp = pgp;
   }
   async create(values) {
-    return this.db.one(sql.create, {
-    });
+    return this.db.one('', { });
   }
 
   async readAll() {

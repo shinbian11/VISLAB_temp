@@ -1,4 +1,3 @@
-const { research: sql } = require('../sql');
 
 class ResearchRepository {
   constructor(db, pgp) {
@@ -6,8 +5,7 @@ class ResearchRepository {
     this.pgp = pgp;
   }
   async create(values) {
-    return this.db.one(sql.create, {
-    });
+    return this.db.one('', { });
   }
 
   async readAll() {

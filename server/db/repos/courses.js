@@ -1,5 +1,3 @@
-const { courses: sql } = require('../sql');
-
 class CoursesRepository {
   constructor(db, pgp) {
     this.db = db;
