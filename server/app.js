@@ -6,6 +6,7 @@ const logger = require('morgan');
 const assets = require('./config/assets.json')
 
 const indexRouter = require('./routes/index');
+const bannersRouter = require('./routes/banners');
 const coursesRouter = require('./routes/courses');
 const eventsRouter = require('./routes/events');
 const membersRouter = require('./routes/members');
@@ -28,6 +29,7 @@ app.use('/profile', express.static(path.join(__dirname, assets.profile)));
 app.use('/teaser', express.static(path.join(__dirname, assets.teaser)));
 
 app.use('/', indexRouter);
+app.use('/banners', bannersRouter);
 app.use('/courses', coursesRouter);
 app.use('/events', eventsRouter);
 app.use('/members', membersRouter);
