@@ -6,6 +6,11 @@
 
 .container {
   min-width: 300px;
+  .toolbar {
+    color: white;
+    background: #1e7fa5;
+  }
+
   .icon {
     padding-right: 10px;
   }
