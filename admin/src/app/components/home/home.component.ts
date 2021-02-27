@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import {AuthService} from '../../services/auth.service';
+import {Router} from '@angular/router';
 
 interface IMenu {
   label: string;
@@ -30,12 +32,20 @@ export class HomeComponent {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private auth: AuthService,
+    private router: Router) {
     this.selectedItem = this.menuItems[0];
   }
 
   onSelectMenu(item: IMenu): void {
     this.selectedItem = item;
     this.menuItems.forEach((e) => e.isSelected = e.label === item.label);
+  }
+
+  onLogout(): void {
+    this.auth.logout();
+    this.router.navigate(['/login']).then();
   }
 }
