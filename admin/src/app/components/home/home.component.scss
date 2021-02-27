@@ -36,6 +36,10 @@
     .title-bar {
       color: white;
       background: #1e7fa5;
+
+      .button-label {
+        padding-right: 5px;
+      }
     }
     .container {
       padding: 10px;

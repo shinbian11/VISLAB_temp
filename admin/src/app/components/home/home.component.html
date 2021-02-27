@@ -30,9 +30,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <button mat-button>
-        <mat-icon class="menu-icon">add</mat-icon>
-        <span>New {{ selectedItem.postfix | titlecase }}</span>
+      <button mat-raised-button>
+        <mat-icon class="menu-icon">add_box</mat-icon>
+        <span class="button-label">New {{ selectedItem.postfix | titlecase }}</span>
       </button>
     </mat-toolbar>
     <div class="container">
