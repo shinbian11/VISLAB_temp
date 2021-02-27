@@ -1,0 +1,26 @@
+<div class="container">
+  <mat-card>
+    <mat-toolbar color="primary">Login</mat-toolbar>
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label><mat-icon>person</mat-icon></mat-label>
+            <input type="text" matInput placeholder="Username" formControlName="username">
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label><mat-icon>lock</mat-icon></mat-label>
+            <input type="password" matInput placeholder="Password" formControlName="password">
+          </mat-form-field>
+        </p>
+
+        <div class="button">
+          <button type="submit" mat-button>Login</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

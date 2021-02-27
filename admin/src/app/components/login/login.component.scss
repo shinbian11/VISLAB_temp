@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.container {
+  min-width: 300px;
+  .icon {
+    padding-right: 10px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .error {
+    padding: 16px;
+    width: 300px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

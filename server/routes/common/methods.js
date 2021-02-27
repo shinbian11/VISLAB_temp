@@ -13,7 +13,7 @@ function handleAndRespond(handler) {
 
 // CRUD
 function POST(router, url, handler) { router.post(url, handleAndRespond(handler)); }
-function GET(router, url, handler) { router.get(url, handleAndRespond(handler)); }
+function GET(router, url, handler) { router.get(url, verifyToken, handleAndRespond(handler)); }
 function PUT(router, url, handler) { router.get(url, handleAndRespond(handler)); }
 function DELETE(router, url, handler) { router.delete(url, handleAndRespond(handler)); }
 

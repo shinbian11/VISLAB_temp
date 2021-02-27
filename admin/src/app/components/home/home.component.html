@@ -1,0 +1,42 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>
+      <img src="assets/logo_lab_compact.png" alt="VISLab logo" class="logo">
+    </mat-toolbar>
+    <mat-nav-list>
+      <mat-divider></mat-divider>
+      <a *ngFor="let item of menuItems"
+         mat-list-item
+         [routerLink]="'/' + item.label"
+         [class.selected]="item.isSelected" (click)="onSelectMenu(item)">
+        <mat-icon class="menu-icon">{{ item.icon }}</mat-icon>{{ item.label | titlecase }}
+      </a>
+      <mat-divider></mat-divider>
+      <a mat-list-item>
+        <mat-icon class="menu-icon">logout</mat-icon>Logout
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="title-bar">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon class="menu-icon">add</mat-icon>
+        <span>New {{ selectedItem.postfix | titlecase }}</span>
+      </button>
+    </mat-toolbar>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
