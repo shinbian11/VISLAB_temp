@@ -13,7 +13,7 @@ class CoursesRepository {
   }
 
   async readById(id) {
-    return this.db.oneOrNone('SELECT * FROM courses WHERE id = $1', id);
+    return this.db.oneOrNone('SELECT * FROM courses WHERE id = $1', [id]);
   }
 
   async readCount() {

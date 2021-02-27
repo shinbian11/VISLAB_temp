@@ -2,11 +2,12 @@ const promise = require('bluebird');
 const pgPromise = require('pg-promise');
 const config = require('../config/config.json');
 const { Diagnostics } = require('./diagnostics');
-const { Courses, Events, Members, Publications, Research } = require('./repos');
+const { Admins, Courses, Events, Members, Publications, Research } = require('./repos');
 
 const initOptions = {
   promiseLib: promise,
   extend(obj, dc) {
+    obj.admins = new Admins(obj, pgp);
     obj.courses = new Courses(obj, pgp);
     obj.events = new Events(obj, pgp);
     obj.members = new Members(obj, pgp);

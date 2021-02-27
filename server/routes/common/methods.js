@@ -1,3 +1,5 @@
+const { verifyToken } = require('./token');
+
 function handleAndRespond(handler) {
   return async (req, res) => {
     try {

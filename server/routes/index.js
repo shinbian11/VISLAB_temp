@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
+const { verifyToken } = require('./common/token');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', verifyToken, (req, res) => {
   res.render('index', { title: 'Express' });
 });
 

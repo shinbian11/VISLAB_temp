@@ -3,5 +3,6 @@
   "port": "PORT_NUMBER",
   "database": "DBNAME",
   "user": "USERNAME",
-  "password": "PASSWORD"
+  "password": "PASSWORD",
+  "secret": "SECRET_KEY"
 }

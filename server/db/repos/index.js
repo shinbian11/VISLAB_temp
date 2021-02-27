@@ -1,4 +1,5 @@
 module.exports = {
+  Admins: require('./admins'),
   Courses: require('./courses'),
   Events: require('./events'),
   Members: require('./members'),
