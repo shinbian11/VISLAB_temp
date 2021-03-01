@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/src/assets/banner/
+/src/assets/pdf/
+/src/assets/profile/
+/src/assets/teaser/

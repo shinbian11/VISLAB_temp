@@ -25,6 +25,7 @@ export class HomeComponent {
     { label: 'research', icon: 'science', postfix: 'research', isSelected: false },
     { label: 'courses', icon: 'school', postfix: 'course', isSelected: false },
     { label: 'events', icon: 'event', postfix: 'event', isSelected: false },
+    { label: 'banners', icon: 'wallpaper', postfix: 'banner', isSelected: false },
   ];
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(

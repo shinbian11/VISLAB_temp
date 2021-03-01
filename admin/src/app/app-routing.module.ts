@@ -8,6 +8,7 @@ import { CourseComponent } from './components/course/course.component';
 import { PublicationComponent } from './components/publication/publication.component';
 import { ResearchComponent } from './components/research/research.component';
 import { EventComponent } from './components/event/event.component';
+import {BannerComponent} from './components/banner/banner.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'research', canActivate: [AuthGuard], component: ResearchComponent },
       { path: 'courses', canActivate: [AuthGuard], component: CourseComponent, },
       { path: 'events', canActivate: [AuthGuard], component: EventComponent },
+      { path: 'banners', canActivate: [AuthGuard], component: BannerComponent },
     ]
   },
 

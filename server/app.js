@@ -26,10 +26,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/banner', express.static(path.join(__dirname, assets.banner)));
-app.use('/pdf', express.static(path.join(__dirname, assets.pdf)));
-app.use('/profile', express.static(path.join(__dirname, assets.profile)));
-app.use('/teaser', express.static(path.join(__dirname, assets.teaser)));
+app.use(assets.banner_static, express.static(path.join(__dirname, assets.banner)));
+app.use(assets.pdf_static, express.static(path.join(__dirname, assets.pdf)));
+app.use(assets.profile_static, express.static(path.join(__dirname, assets.profile)));
+app.use(assets.teaser_static, express.static(path.join(__dirname, assets.teaser)));
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);

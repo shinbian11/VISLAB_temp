@@ -1,6 +1,10 @@
 {
   "banner": "assets/banner",
+  "banner_static": "/res/banner",
   "pdf": "assets/pdf",
+  "pdf_static": "/res/pdf",
   "profile": "assets/profile",
-  "teaser": "assets/teaser"
+  "profile_static": "/res/profile",
+  "teaser": "assets/teaser",
+  "teaser_static": "/res/teaser"
 }

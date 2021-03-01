@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { JwtModule } from '@auth0/angular-jwt';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -32,6 +33,7 @@ import { MemberComponent } from './components/member/member.component';
 import { PublicationComponent } from './components/publication/publication.component';
 import { ResearchComponent } from './components/research/research.component';
 import { EventComponent } from './components/event/event.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 @NgModule({
@@ -44,11 +46,13 @@ import { EventComponent } from './components/event/event.component';
     PublicationComponent,
     ResearchComponent,
     EventComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    DragDropModule,
     HttpClientModule,
     AppRoutingModule,
     JwtModule.forRoot( { config: { tokenGetter: () => localStorage.getItem('ACCESS_TOKEN')} }),

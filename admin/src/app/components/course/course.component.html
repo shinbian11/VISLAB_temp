@@ -1,19 +1,21 @@
-<table mat-table [dataSource]="courses" class="mat-elevation-z8">
-  <ng-container matColumnDef="title">
-    <th mat-header-cell *matHeaderCellDef>Title</th>
-    <td mat-cell *matCellDef="let course">{{ course.title }}</td>
-  </ng-container>
+<div class="container">
+  <mat-table [dataSource]="courses" class="mat-elevation-z8">
+    <ng-container matColumnDef="title">
+      <mat-header-cell *matHeaderCellDef>Title</mat-header-cell>
+      <mat-cell *matCellDef="let course">{{ course.title }}</mat-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="type">
-    <th mat-header-cell *matHeaderCellDef>Type</th>
-    <td mat-cell *matCellDef="let course">{{ course.type }}</td>
-  </ng-container>
+    <ng-container matColumnDef="type">
+      <mat-header-cell *matHeaderCellDef>Type</mat-header-cell>
+      <mat-cell *matCellDef="let course">{{ course.type }}</mat-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="description">
-    <th mat-header-cell *matHeaderCellDef>Description</th>
-    <td mat-cell *matCellDef="let course">{{ course.description }}</td>
-  </ng-container>
+    <ng-container matColumnDef="description">
+      <mat-header-cell *matHeaderCellDef>Description</mat-header-cell>
+      <mat-cell *matCellDef="let course">{{ course.description }}</mat-cell>
+    </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-</table>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
