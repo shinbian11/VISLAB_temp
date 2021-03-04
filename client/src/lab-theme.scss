@@ -1,0 +1,36 @@
+$dark-primary-text: rgba(black, 0.87);
+$light-primary-text: white;
+
+$lab-blue: (
+  50: #E3F6F8,
+  100: #B7E7EF,
+  200: #8BD8E7,
+  300: #5CAED7,
+  800: #1E7FA5,
+  900: #005376,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text
+  )
+);
+
+$lab-orange: (
+  50: #FDFCE7,
+  100: #FBF6C4,
+  200: #F8F09E,
+  300: #FFD360,
+  800: #EBA22E,
+  900: #B47300,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    800: $dark-primary-text,
+    900: $light-primary-text,
+  )
+)

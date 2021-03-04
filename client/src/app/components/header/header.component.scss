@@ -1,0 +1,21 @@
+a {
+  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #6E6E6E;
+}
+a:hover, a:active{
+  color: #5CAED7;
+}
+.navigation-items{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+mat-toolbar{
+  border-radius: 3px;
+}
+@media(max-width: 959px){
+  mat-toolbar{
+    border-radius: 0;
+  }
+}
