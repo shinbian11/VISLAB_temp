@@ -22,11 +22,6 @@
           font-size: medium;
         }
       }
-
-      .content-card {
-        width: 100%;
-        height: auto;
-      }
     }
   }
 
@@ -40,7 +35,6 @@
 
     .text-box {
       position: absolute;
-      left: 5px;
       padding-right: 5px;
 
       .title {
@@ -53,6 +47,7 @@
       .content {
         font-size: medium;
         color: #888;
+        padding-bottom: 15px;
       }
     }
   }
@@ -72,6 +67,22 @@
       }
       .desc {
         font-weight: bold;
+      }
+    }
+  }
+
+  .two-column {
+    padding-top: 10px;
+    .notice {
+      .title {
+        font-weight: bold;
+        font-size: x-large;
+        color: #1E7FA5;
+      }
+
+      .content {
+        font-size: medium;
+        color: #888;
       }
     }
   }
