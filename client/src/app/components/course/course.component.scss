@@ -1,0 +1,26 @@
+.container {
+  mat-card {
+    margin-bottom: 10px;
+    mat-card-header {
+      mat-card-title {
+        color: #1E7FA5;
+      }
+      mat-card-subtitle {
+      }
+    }
+
+    mat-card-content {
+      padding: 20px 20px 10px 20px;
+      margin: 0;
+    }
+    mat-card-footer {
+      padding: 10px 30px;
+      .mat-standard-chip {
+        min-height: 20px;
+      }
+      mat-chip {
+        font-size: x-small;
+      }
+    }
+  }
+}

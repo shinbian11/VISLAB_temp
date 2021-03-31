@@ -13,6 +13,12 @@ a:hover, a:active{
 }
 mat-toolbar{
   border-radius: 3px;
+
+  .logo {
+    height: 35px;
+    padding-top: 5px;
+    margin: auto;
+  }
 }
 @media(max-width: 959px){
   mat-toolbar{
