@@ -13,3 +13,28 @@ mat-sidenav-content {
 main {
   padding: 10px;
 }
+
+mat-toolbar-row {
+  .logo {
+    height: 35px;
+    width: auto;
+    padding-right: 10px;
+  }
+
+  .title {
+    font-size: small;
+    font-weight: normal;
+    line-height: 20px;
+  }
+
+  .spacer {
+    flex: 1 0 auto;
+  }
+
+  .address {
+    text-align: right;
+    font-size: small;
+    font-weight: normal;
+    line-height: 20px;
+  }
+}
