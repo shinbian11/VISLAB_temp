@@ -1,0 +1,81 @@
+.container {
+  .year {
+    display: flex;
+
+    .header {
+      .label {
+        padding-top: 20px;
+        height: auto;
+        background-color: white;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+
+    .content {
+      .section {
+        .label {
+          padding: 20px 40px 0 40px;
+          color: gray;
+        }
+
+        .publication {
+          padding: 20px 40px;
+          font-size: small;
+          width: auto;
+
+          .main-title {
+            font-size: large;
+            font-weight: bold;
+            color: #1E7FA5;
+          }
+
+          .type {
+            font-size: small;
+            color: darkgray;
+            padding-bottom: 5px;
+          }
+
+          .authors {
+            .member {
+              font-weight: bolder;
+              color: #EBA22E;
+            }
+          }
+
+          .title {
+            font-style: italic;
+          }
+
+          .extra {
+            color: darkgray;
+          }
+        }
+      }
+    }
+  }
+
+  .year:nth-of-type(odd) {
+    .header {
+      background: repeating-linear-gradient(
+          45deg,
+          #8BD8E7,
+          #8BD8E7 1px,
+          white 2px,
+          white 4px
+      );
+    }
+  }
+
+  .year:nth-of-type(even) {
+    .header {
+      background: repeating-linear-gradient(
+          45deg,
+          #FFD360,
+          #FFD360 1px,
+          white 2px,
+          white 4px
+      );
+    }
+  }
+}
