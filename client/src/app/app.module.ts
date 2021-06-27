@@ -24,6 +24,7 @@ import { MemberComponent } from './components/member/member.component';
 import { PublicationComponent } from './components/publication/publication.component';
 import { ResearchComponent } from './components/research/research.component';
 import { CourseComponent } from './components/course/course.component';
+import { SubComponent } from './components/sub/sub.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CourseComponent } from './components/course/course.component';
     PublicationComponent,
     ResearchComponent,
     CourseComponent,
+    SubComponent,
   ],
   imports: [
     BrowserModule,

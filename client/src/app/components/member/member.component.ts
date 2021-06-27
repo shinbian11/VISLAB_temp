@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SubComponent } from '../sub/sub.component';
 
 @Component({
   selector: 'app-member',
