@@ -1,4 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
+import { ResearchListComponent } from '../research-list/research-list.component';
 
 @Component({
   selector: 'app-research',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResearchComponent implements OnInit {
 
+  
   constructor() { }
 
   ngOnInit(): void {

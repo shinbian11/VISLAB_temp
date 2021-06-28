@@ -25,6 +25,7 @@ import { PublicationComponent } from './components/publication/publication.compo
 import { ResearchComponent } from './components/research/research.component';
 import { CourseComponent } from './components/course/course.component';
 import { SubComponent } from './components/sub/sub.component';
+import { ResearchListComponent } from './components/research-list/research-list.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SubComponent } from './components/sub/sub.component';
     ResearchComponent,
     CourseComponent,
     SubComponent,
+    ResearchListComponent,
   ],
   imports: [
     BrowserModule,

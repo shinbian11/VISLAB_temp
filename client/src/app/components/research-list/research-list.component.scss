@@ -1,0 +1,31 @@
+
+.content {
+
+    .research {
+        .title {
+            font-weight: bold;
+        }
+        .obliqueDesc {
+            font-style: italic;
+            font-size: small;
+            color: #888888;
+        }
+        .members {
+            font-size : 9px;
+            color: #EBA22E;
+        }
+    }
+
+    .picture {
+        padding: 30px;
+        .image {
+            img {
+                width: 400px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 10%;
+            }
+        }
+    }
+
+}
