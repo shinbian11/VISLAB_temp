@@ -14,8 +14,8 @@ export class ResearchComponent implements OnInit {
 
   research2021 = this.researchTotal.slice(0, 3);
   research2020 = this.researchTotal.slice(3, 5);
-  research2019 = this.researchTotal.slice(5, 8);
-  research2018 = this.researchTotal.slice(8, 10);
+  research2019 = this.researchTotal.slice(5, 9);
+  research2018 = this.researchTotal.slice(9, 11);
 
   constructor() { }
 

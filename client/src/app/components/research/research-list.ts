@@ -10,6 +10,7 @@ export const ResearchList : Research[] = [
  { year : 2019, title : 'PatientFlow', obliqueDesc : 'A project that analyzes and visualizes hospital-related data across the country and clusters it', members : 'Jung Yeon Kim and Jin Woo Park / 2021.6 ~', image : 'assets/images/PatientFlow_main.png'},
  { year : 2019, title : 'PatientFlow', obliqueDesc : 'A project that analyzes and visualizes hospital-related data across the country and clusters it', members : 'Jung Yeon Kim and Jin Woo Park / 2021.6 ~', image : 'assets/images/PatientFlow_main.png'},
  { year : 2019, title : 'PatientFlow', obliqueDesc : 'A project that analyzes and visualizes hospital-related data across the country and clusters it', members : 'Jung Yeon Kim and Jin Woo Park / 2021.6 ~', image : 'assets/images/PatientFlow_main.png'},
+ { year : 2019, title : 'PatientFlow', obliqueDesc : 'A project that analyzes and visualizes hospital-related data across the country and clusters it', members : 'Jung Yeon Kim and Jin Woo Park / 2021.6 ~', image : 'assets/images/PatientFlow_main.png'},
  { year : 2018, title : 'PatientFlow', obliqueDesc : 'A project that analyzes and visualizes hospital-related data across the country and clusters it', members : 'Jung Yeon Kim and Jin Woo Park / 2021.6 ~', image : 'assets/images/PatientFlow_main.png'},
  
 ];
