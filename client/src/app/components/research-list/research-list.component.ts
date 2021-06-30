@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Research } from './research';
-import { ResearchList } from './research-list';
+import { Component, Input, OnInit } from '@angular/core';
+import { Research } from '../research/research';
+import { ResearchList } from '../research/research-list';
 
 @Component({
   selector: 'app-research-list',
@@ -9,10 +9,12 @@ import { ResearchList } from './research-list';
 })
 
 
+
 export class ResearchListComponent implements OnInit {
 
-  research : Research[] = ResearchList;
   
+  @Input() receivedList : Research[] = ResearchList;
+
   constructor() { }
 
   ngOnInit(): void {

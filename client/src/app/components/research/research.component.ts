@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
-import { ResearchListComponent } from '../research-list/research-list.component';
+import { Research } from "./research";
+import { ResearchList } from './research-list';
 
 @Component({
   selector: 'app-research',
@@ -9,7 +10,13 @@ import { ResearchListComponent } from '../research-list/research-list.component'
 })
 export class ResearchComponent implements OnInit {
 
-  
+  researchTotal : Research[] = ResearchList;
+
+  research2021 = this.researchTotal.slice(0, 3);
+  research2020 = this.researchTotal.slice(3, 5);
+  research2019 = this.researchTotal.slice(5, 8);
+  research2018 = this.researchTotal.slice(8, 10);
+
   constructor() { }
 
   ngOnInit(): void {
