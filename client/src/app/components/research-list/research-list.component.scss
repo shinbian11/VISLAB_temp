@@ -19,68 +19,17 @@
             font-size: x-small;
           }
         }
+
+        background: repeating-linear-gradient(
+                        45deg,
+                        #8BD8E7,
+                        #8BD8E7 1px,
+                        white 2px,
+                        white 4px
+        );
      }  
 
-     .header {
-        background: repeating-linear-gradient(
-            45deg,
-            #FFD360,
-            #FFD360 1px,
-            white 2px,
-            white 4px
-        );
-    }
-
-    //  .section:nth-of-type(odd) { 
-    //     .header {
-    //         background: repeating-linear-gradient(
-    //             45deg,
-    //             #8BD8E7,
-    //             #8BD8E7 1px,
-    //             white 2px,
-    //             white 4px
-    //         );
-    //     }
-    // }
-      
-    // .section:nth-of-type(even) {
-    //     .header {
-    //     background: repeating-linear-gradient(
-    //         45deg,
-    //         #FFD360,
-    //         #FFD360 1px,
-    //         white 2px,
-    //         white 4px
-    //     );
-    //    }
-    //}
-    // @mixin headerBackground($year){
-    //     @if $year%2 != 0 {
-    //         background: repeating-linear-gradient(
-    //                 45deg,
-    //                 #8BD8E7,
-    //                 #8BD8E7 1px,
-    //                 white 2px,
-    //                 white 4px
-    //         ); 
-    //     }
-    //     @if $year%2 == 0 {
-    //         background: repeating-linear-gradient(
-    //             45deg,
-    //             #FFD360,
-    //             #FFD360 1px,
-    //             white 2px,
-    //             white 4px        
-    //         ); 
-    //     }
-    // }
-
-    // .header{
-    //     @include headerBackground($receivedList[0].year);
-    // }  
- 
-
-    .content {
+     .content {
 
         .research {
             .title {
@@ -109,5 +58,67 @@
             }
         }
     }
+    // :nth-child(2n){
+    //     .section{
+    //         .header{
+    //             background: repeating-linear-gradient(
+    //             45deg,
+    //             #8BD8E7,
+    //             #8BD8E7 1px,
+    //             white 2px,
+    //             white 4px
+    //             );
+    //         }
+    //     }
+    // }
+
+    //  .section:nth-of-type(odd) { 
+    //     .header {
+    //         background: repeating-linear-gradient(
+    //             45deg,
+    //             #8BD8E7,
+    //             #8BD8E7 1px,
+    //             white 2px,
+    //             white 4px
+    //         );
+    //     }
+    // }
+      
+    // .section:nth-of-type(even) {
+    //     .header {
+    //     background: repeating-linear-gradient(
+    //         45deg,
+    //         #FFD360,
+    //         #FFD360 1px,
+    //         white 2px,
+    //         white 4px
+    //     );
+    //    }
+    // }
+    // @mixin headerBackground($year){
+    //     @if $year%2 != 0 {
+    //         background: repeating-linear-gradient(
+    //                 45deg,
+    //                 #8BD8E7,
+    //                 #8BD8E7 1px,
+    //                 white 2px,
+    //                 white 4px
+    //         ); 
+    //     }
+    //     @if $year%2 == 0 {
+    //         background: repeating-linear-gradient(
+    //             45deg,
+    //             #FFD360,
+    //             #FFD360 1px,
+    //             white 2px,
+    //             white 4px        
+    //         ); 
+    //     }
+    // }
+
+    // .header{
+    //     @include headerBackground($receivedList[0].year);
+    // }  
 
 }
+
