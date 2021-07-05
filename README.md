@@ -37,44 +37,8 @@
 
 - (교수님의 피드백 : research 배열을 일일히 slicing 하지 말고 map과 filter를 이용하여 한번에 깔끔하게 처리하기) 
 - map과 filter를 이용하여 깔끔하게 다듬는데에 성공! <br><br>
-  ```
-    // research.component.ts
-    
-    // research2021 = this.researchTotal.slice(0, 3);
-    // research2020 = this.researchTotal.slice(3, 5);
-    // research2019 = this.researchTotal.slice(5, 9);
-    // research2018 = this.researchTotal.slice(9, 11);
-    // 이렇게 하는 것 대신,
-
-
-    year = [2021,2020,2019,2018];
-    researchYear = this.year.map(element => this.researchTotal.filter(r => r.year === element));
-    //이렇게 했다!
-
-  ```
-  ```
   
-    //research.component.html
-    
-    //2021 research
-    //<app-research-list [receivedList]='research2021'></app-research-list>
+  ![캡처](https://user-images.githubusercontent.com/59140182/124434176-84621300-ddae-11eb-91a2-6e44d9549937.PNG)
+  ![캡처2](https://user-images.githubusercontent.com/59140182/124434180-84faa980-ddae-11eb-81ee-cad9e8e80119.PNG)
 
-    //2020 research
-    //<app-research-list [receivedList]='research2020'></app-research-list>
-    
-    //2019 research
-    //<app-research-list [receivedList]='research2019'></app-research-list>
-    
-    //2018 research
-    //<app-research-list [receivedList]='research2018'></app-research-list>
-    
-    // 이렇게 하는 것 대신,
-    
-    <div *ngFor = "let y of researchYear">
-        <app-research-list [receivedList]='y'></app-research-list>
-    </div>
-    
-    //이렇게 했다! 년도별로 컴포넌트 만들지 않고 ngFor문으로 구현하는데에 성공!-->
-   
-    ```
     - (고민 : 아직도 section별 다르게 색깔 넣는건 구현 못했다.. 나중에)
