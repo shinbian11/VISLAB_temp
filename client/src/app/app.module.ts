@@ -40,6 +40,7 @@ import { ResearchListComponent } from './components/research-list/research-list.
     CourseComponent,
     SubComponent,
     ResearchListComponent,
+  
   ],
   imports: [
     BrowserModule,
