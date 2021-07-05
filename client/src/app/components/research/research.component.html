@@ -1,10 +1,21 @@
 <div class="container">
 
 
-    <!--년도별로 컴포넌트 만들지 않고 ngFor문으로 구현하는데에 성공!-->
-
+     <!--년도별로 컴포넌트 만들지 않고 ngFor문으로 구현하는데에 성공!-->
     <div *ngFor = "let y of researchYear">
         <app-research-list [receivedList]='y'></app-research-list>
     </div>
+
+    <!-- 2021 research -->
+    <!--<app-research-list [receivedList]='research2021'></app-research-list> -->
+
+    <!-- 2020 research -->
+    <!--<app-research-list [receivedList]='research2020'></app-research-list> -->
+
+    <!-- 2019 research -->
+    <!--<app-research-list [receivedList]='research2019'></app-research-list> -->
+
+    <!-- 2018 research -->
+    <!--<app-research-list [receivedList]='research2018'></app-research-list> -->
 
 </div>
