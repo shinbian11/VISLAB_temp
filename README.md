@@ -42,5 +42,7 @@
   ![캡처2](https://user-images.githubusercontent.com/59140182/124434180-84faa980-ddae-11eb-81ee-cad9e8e80119.PNG)
 
     - (고민 : 아직도 section별 다르게 색깔 넣는건 구현 못했다.. 나중에)
+- member component에 Intern 칸을 6개 만듦.
+- home 부분 개선 (오른쪽 하단 부분 하이퍼링크 넣을 페이지 구성 생각 중)
 
 - 당분간 정민님과 해야 할 일 : 현재 있는 static 데이터(임의의 데이터)를 apps 서버에 있는 data들로 교체하는 작업과 research 부분 다듬는 것을 위주로 진행
