@@ -1,6 +1,6 @@
 # vislab-web
 
-<h3>6/28</h3>
+<h3>6/28~</h3>
 
 - VISLAB Research 부분 제작 중 (추후에 research 이미지 수정) - table 이용!
 
@@ -11,7 +11,7 @@
   <br><br>=> 해결 : Research 클래스 배열을 만들어서 해결!
 
 <br>
-<h3>6/30</h3>
+<h3>6/30~</h3>
 
 - (교수님의 피드백 : app-research-list 안에 section까지 포함시켜서 하드코딩을 피하기) 
 - 교수님 피드백에 따라 section tag 까지 한번에 research-list 컴포넌트에 포함시킴!<br><br>
@@ -33,7 +33,7 @@
   <br>scss 파일에서 @include 와 @if, 그리고 @mixin 을 사용하면 될 것 같긴 한데, research-list.component.html 파일에서 사용하는 <b>receivedList[0].year</b> 라는 이름의 변수를 가져       와서 research-list.component.scss의 @mixin 의 매개변수로 이용하고 싶은데 안되네...)
 
 <br>
-<h3>7/5</h3>
+<h3>7/5~</h3>
 
 - (교수님의 피드백 : research 배열을 일일히 slicing 하지 말고 map과 filter를 이용하여 한번에 깔끔하게 처리하기) 
 - map과 filter를 이용하여 깔끔하게 다듬는데에 성공! <br><br>
@@ -42,7 +42,8 @@
   ![캡처2](https://user-images.githubusercontent.com/59140182/124434180-84faa980-ddae-11eb-81ee-cad9e8e80119.PNG)
 
     - (고민 : 아직도 section별 다르게 색깔 넣는건 구현 못했다.. 나중에)
-- member component에 Intern 칸을 6개 만듦.
+    
+- member component에 Intern 칸을 일단 2칸에서 6칸으로 확장함.
 - home 부분 개선 (오른쪽 하단 부분 하이퍼링크 넣을 페이지 구성 생각 중)
 
 - 당분간 정민님과 해야 할 일 : 현재 있는 static 데이터(임의의 데이터)를 apps 서버에 있는 data들로 교체하는 작업과 research 부분 다듬는 것을 위주로 진행
