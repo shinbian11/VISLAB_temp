@@ -26,6 +26,8 @@ import { ResearchComponent } from './components/research/research.component';
 import { CourseComponent } from './components/course/course.component';
 import { SubComponent } from './components/sub/sub.component';
 import { ResearchListComponent } from './components/research-list/research-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MembersListComponent } from './components/members-list/members-list.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { ResearchListComponent } from './components/research-list/research-list.
     CourseComponent,
     SubComponent,
     ResearchListComponent,
+    MembersListComponent,
   
   ],
   imports: [
@@ -57,6 +60,7 @@ import { ResearchListComponent } from './components/research-list/research-list.
     MatChipsModule,
     MatGridListModule,
     MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

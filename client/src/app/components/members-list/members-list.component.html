@@ -1,0 +1,36 @@
+<div class="section">
+
+    <div class="header">
+      <div class="label">
+        {{ReceivedList[0].degree}}
+      </div>
+    </div>
+
+    
+    <div class="content" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="0px">
+        
+        <div *ngFor = "let m of ReceivedList">
+            <div class="person" fxFlex="50" fxFlex.xs="100">
+                <div class="image">
+                    <img src={{m.imagepath}} alt="hsong">
+                </div>
+
+                <div class="desc">
+                    <div class="name">
+                        {{m.name}} /
+                        {{m.role}}
+                    </div>
+                    <div class="interest">
+                        {{m.interest}}
+                    </div>
+                    <div class="links">
+                        <a mat-icon-button href="mailto:{{m.email}}"><mat-icon>mail</mat-icon></a>
+                        <a mat-icon-button href="#"><mat-icon>home</mat-icon></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ </div>
+    
