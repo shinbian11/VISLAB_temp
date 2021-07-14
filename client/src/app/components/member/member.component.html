@@ -1,9 +1,11 @@
 
+
 <div class="container">
-  {{Members}}
-  <div *ngFor="let m of Members">
-     <app-members-list [ReceivedList]='m'></app-members-list>  
-  </div>
+  
+    <div *ngFor="let m of Members">
+        <app-members-list [memberList]='m'></app-members-list> 
+    </div>  
+
  <!-- 
   
   <div class="section">

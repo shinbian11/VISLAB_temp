@@ -7,13 +7,16 @@ import { MemberService } from 'src/app/shared/services/member.service';
   templateUrl: './members-list.component.html',
   styleUrls: ['./members-list.component.scss']
 })
+
 export class MembersListComponent implements OnInit {
 
-  @Input() ReceivedList :  IMember[]=[];
+  @Input() memberList : IMember[]=[];
 
   constructor() { }
 
   ngOnInit(): void {
+  
   }
 
+  
 }
