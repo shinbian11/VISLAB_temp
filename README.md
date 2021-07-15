@@ -47,3 +47,10 @@
 - home 부분 개선 (오른쪽 하단 부분 하이퍼링크 넣을 페이지 구성 생각 중)
 
 - 당분간 정민님과 해야 할 일 : 현재 있는 static 데이터(임의의 데이터)를 apps 서버에 있는 data들로 교체하는 작업과 research 부분 다듬는 것을 위주로 진행
+
+<br>
+<h3>7/15~</h3>
+
+- datagrip 에 PostgreSQL의 Insert into ~ values ~ 문으로 값을 추가한 다음에, subscribe 와 Observable의 개념을 이용하여 datagrip에 있는 값을 vscode으로 끌어온 다음, rendering 까지 어느정도 끝냄 (member/research page 부분)
+
+- 나머지 page 부분들도 다 같은 방식으로 구현하기만 하면 될 듯.
