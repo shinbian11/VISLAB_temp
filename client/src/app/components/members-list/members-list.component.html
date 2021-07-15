@@ -4,6 +4,9 @@
    <div class="header">
       <div class="label">
         {{memberList[0].degree}}
+        <div *ngIf = "memberList[0].degree === 'PhD' || memberList[0].degree === 'MS'" class="sub">
+            candidates
+        </div>
       </div>
     </div>
 
@@ -13,13 +16,12 @@
         <div *ngFor = "let m of memberList">
             <div class="person" fxFlex="50" fxFlex.xs="100">
                 <div class="image">
-                    <img src={{m.imagepath}} alt="hsong">
+                    <img src="{{m.image_path}}" alt="{{m.image_org_name}}">
                 </div>
-
+                
                 <div class="desc">
                     <div class="name">
-                        {{m.name}} /
-                        {{m.role}}
+                        {{m.name}} / {{m.role}}
                     </div>
                     <div class="interest">
                         {{m.interest}}

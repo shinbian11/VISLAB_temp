@@ -13,7 +13,9 @@ export class MemberComponent implements OnInit {
 
   apiUrl = environment.apiUrl;  // use symbolic link in production
   members: IMember[] = [];
-  
+  Members: IMember[][] = [];
+  degree_list = ["Prof","PhD","MS","Intern","Alumni"];
+
   displayedColumns: string[] = [
     'index', 'name', 'role', 'degree', 'employment', 'email', 'is_alumni', 'image_path', 'actions'
   ];
@@ -22,13 +24,13 @@ export class MemberComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.ms.getAll().subscribe(members => { this.members = members.sort((a, b) => a.index - b.index);});
-    
+    this.ms.getAll().subscribe(members => {
+       this.members = members.sort((a, b) => a.index - b.index);
+       this.Members = this.degree_list.map(element => this.members.filter(a => a.degree === element));
+    });
+
   }
-
-  degree_list = ["Prof","PhD","MS","Intern"];
   
-  Members = this.degree_list.map(element => this.members.filter(a => a.degree === element));
-
+  
 }
 

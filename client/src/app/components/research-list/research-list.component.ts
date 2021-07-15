@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Research } from '../research/research';
-import { ResearchList } from '../research/research-list';
+import {IResearch} from '../../shared/models/research';
 
 @Component({
   selector: 'app-research-list',
@@ -13,7 +12,7 @@ import { ResearchList } from '../research/research-list';
 export class ResearchListComponent implements OnInit {
 
   
-  @Input() receivedList : Research[] = ResearchList;
+  @Input() receivedList : IResearch[] = [];
 
   constructor() { }
 

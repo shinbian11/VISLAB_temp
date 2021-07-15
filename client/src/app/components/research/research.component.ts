@@ -1,34 +1,33 @@
 
 import { Component, OnInit } from '@angular/core';
 //import { rawListeners } from 'node:process';
-import { Research } from "./research";
-import { ResearchList } from './research-list';
+//import { Research } from "./research";
+//import { ResearchList } from './research-list';
+import { IResearch } from 'src/app/shared/models/research';
+import {environment} from '../../../environments/environment';
+import { ResearchService } from 'src/app/shared/services/research.service';
 
 @Component({
   selector: 'app-research',
   templateUrl: './research.component.html',
   styleUrls: ['./research.component.scss']
 })
+
 export class ResearchComponent implements OnInit {
 
-  researchTotal : Research[] = ResearchList;
+  apiUrl = environment.apiUrl;  // use symbolic link in production
+  researchTotal : IResearch[]=[];
+  researchYear : IResearch[][]=[];
 
-  // List(new Set(this.researchTotal.map(r => r.year))).map(element => {
-  //   this.researchTotal.filter(r => r.year === element)
-  // });
-
+  year = [2021,2020,2019,2018,2017];
   
-  year = [2021,2020,2019,2018];
-  researchYear = this.year.map(element => this.researchTotal.filter(r => r.year === element));
-
-  // research2021 = this.researchTotal.slice(0, 3);
-  // research2020 = this.researchTotal.slice(3, 5);
-  // research2019 = this.researchTotal.slice(5, 9);
-  // research2018 = this.researchTotal.slice(9, 11);
-
-  constructor() { }
+  constructor(private rs: ResearchService) { }
 
   ngOnInit(): void {
+    this.rs.getAll().subscribe(researchTotal => {
+      this.researchTotal = researchTotal.sort((a, b) => a.id - b.id);
+      this.researchYear = this.year.map(element => this.researchTotal.filter(a => a.year === element));
+   });
   }
 
 }
