@@ -65,7 +65,7 @@
 ![캡처](https://user-images.githubusercontent.com/59140182/126313227-4160d580-decf-4d6d-bf08-0e5fbc5a6b6b.PNG)
 
 <br><h1>After</h1><br>
-![캡처2](https://user-images.githubusercontent.com/59140182/126313148-9121aa0d-4788-423b-bcb5-9c18dff6c1be.PNG)
+![캡처2](https://user-images.githubusercontent.com/59140182/126314330-acbc1667-1860-4596-8b52-7e51c0b3531c.PNG)
 
 <br>
 
