@@ -1,1 +1,41 @@
-<p>research works!</p>
+<div class="container" cdkDropListGroup>
+    <mat-table class="mat-elevation-z8" cdkDropList
+               [dataSource]="research"
+               [cdkDropListData]="research"
+               (cdkDropListDropped)="onDrop($event)">
+  
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef class="w-50"> id </mat-header-cell>
+        <mat-cell *matCellDef="let research" class="w-50"> {{research.id}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef> title </mat-header-cell>
+        <mat-cell *matCellDef="let research"> {{research.title}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="year">
+        <mat-header-cell *matHeaderCellDef class="w-100"> year </mat-header-cell>
+        <mat-cell *matCellDef="let research" class="w-100"> {{research.year}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="month">
+        <mat-header-cell *matHeaderCellDef class="w-75"> month </mat-header-cell>
+        <mat-cell *matCellDef="let research" class="w-75"> {{research.month}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="obliquedesc">
+        <mat-header-cell *matHeaderCellDef> obliquedesc </mat-header-cell>
+        <mat-cell *matCellDef="let research"> {{research.obliquedesc}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="members">
+        <mat-header-cell *matHeaderCellDef> members </mat-header-cell>
+        <mat-cell *matCellDef="let research"> {{research.members}} </mat-cell>
+      </ng-container>
+  
+     
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;" cdkDrag></mat-row>
+    </mat-table>
+  </div>

@@ -2,7 +2,12 @@ export interface Course {
   id: number;
   title: string;
   type: string;
-  description: string;
+  prerequisite: string;
+  content : string,
+  subcontent : string,
+  subtitle : string,
   is_visible: boolean;
   index: number;
+  updated?: boolean;
+  semester_button : string;
 }

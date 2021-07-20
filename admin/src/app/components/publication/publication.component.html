@@ -1,1 +1,86 @@
-<p>publication works!</p>
+<div class="container" cdkDropListGroup>
+    <mat-table class="mat-elevation-z8" cdkDropList
+               [dataSource]="publications"
+               [cdkDropListData]="publications"
+               (cdkDropListDropped)="onDrop($event)">
+  
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef class="w-10"> id </mat-header-cell>
+        <mat-cell *matCellDef="let publication" class="w-10"> {{publication.id}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef> title </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.title}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="venue">
+        <mat-header-cell *matHeaderCellDef class="w-100"> venue </mat-header-cell>
+        <mat-cell *matCellDef="let publication" class="w-100"> {{publication.venue}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="type">
+        <mat-header-cell *matHeaderCellDef class="w-75"> type </mat-header-cell>
+        <mat-cell *matCellDef="let publication" class="w-75"> {{publication.type}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="conference_prefix">
+        <mat-header-cell *matHeaderCellDef> conference_prefix </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.conference_prefix}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="published_in">
+        <mat-header-cell *matHeaderCellDef> published_in </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.published_in}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="published_url">
+        <mat-header-cell *matHeaderCellDef> published_url </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.published_url}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="volume">
+        <mat-header-cell *matHeaderCellDef> volume </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.volume}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="no">
+        <mat-header-cell *matHeaderCellDef> no </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.no}} </mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="pages">
+        <mat-header-cell *matHeaderCellDef> pages </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.pages}} </mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="year">
+        <mat-header-cell *matHeaderCellDef> year </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.year}} </mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="conference_info">
+        <mat-header-cell *matHeaderCellDef> conference_info </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.conference_info}} </mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="postfix">
+        <mat-header-cell *matHeaderCellDef> postfix </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.postfix}} </mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="status">
+        <mat-header-cell *matHeaderCellDef> status </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.status}} </mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="rank">
+        <mat-header-cell *matHeaderCellDef> rank </mat-header-cell>
+        <mat-cell *matCellDef="let publication"> {{publication.rank}} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;" cdkDrag></mat-row>
+
+    </mat-table>
+</div>
