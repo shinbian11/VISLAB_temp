@@ -54,3 +54,18 @@
 - datagrip 에 PostgreSQL의 Insert into ~ values ~ 문으로 값을 추가한 다음에, subscribe 와 Observable의 개념을 이용하여 datagrip에 있는 값을 vscode으로 끌어온 다음, rendering 까지 어느정도 끝냄 (member/research page 부분)
 
 - 나머지 page 부분들도 다 같은 방식으로 구현하기만 하면 될 듯.
+
+<br>
+<h3>7/20~</h3>
+
+- admin 페이지에서 datagrip 각 테이블에 입력한 정보들을 members/research/courses/publications 페이지에 보이게끔 구현함<br>
+
+<br><h1>Before</h1><br>
+
+![캡처](https://user-images.githubusercontent.com/59140182/126313227-4160d580-decf-4d6d-bf08-0e5fbc5a6b6b.PNG)
+
+<br><h1>After</h1><br>
+![캡처2](https://user-images.githubusercontent.com/59140182/126313148-9121aa0d-4788-423b-bcb5-9c18dff6c1be.PNG)
+
+<br>
+
