@@ -49,4 +49,6 @@ export class HomeComponent {
     this.auth.logout();
     this.router.navigate(['/login']).then();
   }
+
+
 }

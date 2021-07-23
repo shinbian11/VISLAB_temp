@@ -19,6 +19,11 @@ class MembersRepository {
   async readCount() {
     return this.db.one('SELECT count(*) FROM members', [], a => +a.count);
   }
+
+  async post() {
+      //이거 작성하고 제대로 작동하는지 검사하는 법이 궁금함...
+      //return this.db.one('INSERT INTO members VALUES(....?)')
+  }
 }
 
 module.exports = MembersRepository;
