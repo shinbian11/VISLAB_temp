@@ -46,7 +46,7 @@ export class HomeComponent {
   }
 
   MODALS : {[name: string]: any} = {
-    'member': SurveyComponent
+    member: SurveyComponent
   };
 
   onSelectMenu(item: IMenu): void {
@@ -59,7 +59,7 @@ export class HomeComponent {
     this.router.navigate(['/login']).then();
   }
 
-  open(name: string) {
+  open(name: string) : void {
     this.modalService.open(this.MODALS[name]);
   }
 
