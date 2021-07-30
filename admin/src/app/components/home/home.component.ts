@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import {AuthService} from '../../services/auth.service';
 import {Router} from '@angular/router';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SurveyComponent } from '../survey/survey.component';
 
 interface IMenu {
   label: string;
@@ -18,6 +20,7 @@ interface IMenu {
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  surveyPage: string;
   selectedItem: IMenu;
   menuItems: IMenu[] = [
     { label: 'members', icon: 'people', postfix: 'member', isSelected: true },
@@ -36,9 +39,16 @@ export class HomeComponent {
   constructor(
     private breakpointObserver: BreakpointObserver,
     private auth: AuthService,
-    private router: Router) {
+    private router: Router,
+    public modalService: NgbModal
+    ) {
     this.selectedItem = this.menuItems[0];
   }
+
+  MODALS : {[name: string]: any} = {
+
+    member: SurveyComponent
+  };
 
   onSelectMenu(item: IMenu): void {
     this.selectedItem = item;
@@ -50,5 +60,8 @@ export class HomeComponent {
     this.router.navigate(['/login']).then();
   }
 
+  open(name: string) {
+    this.modalService.open(this.MODALS[name]);
+  }
 
 }

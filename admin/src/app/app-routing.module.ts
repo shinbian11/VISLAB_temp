@@ -9,6 +9,7 @@ import { PublicationComponent } from './components/publication/publication.compo
 import { ResearchComponent } from './components/research/research.component';
 import { EventComponent } from './components/event/event.component';
 import {BannerComponent} from './components/banner/banner.component';
+import { SurveyComponent } from './components/survey/survey.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: 'courses', canActivate: [AuthGuard], component: CourseComponent, },
       { path: 'events', canActivate: [AuthGuard], component: EventComponent },
       { path: 'banners', canActivate: [AuthGuard], component: BannerComponent },
+      { path: 'survey', canActivate: [AuthGuard], component: SurveyComponent }
     ]
   },
 

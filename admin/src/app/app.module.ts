@@ -34,6 +34,8 @@ import { PublicationComponent } from './components/publication/publication.compo
 import { ResearchComponent } from './components/research/research.component';
 import { EventComponent } from './components/event/event.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { SurveyComponent } from './components/survey/survey.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -47,6 +49,7 @@ import { BannerComponent } from './components/banner/banner.component';
     ResearchComponent,
     EventComponent,
     BannerComponent,
+    SurveyComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,6 +75,7 @@ import { BannerComponent } from './components/banner/banner.component';
     MatListModule,
     MatDividerModule,
     LayoutModule,
+    NgbModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
