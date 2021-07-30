@@ -15,7 +15,7 @@ export class MemberService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<IMember[]> {
-    return this.http.get<IResponse>(`${environment.apiUrl}/members/r/all`)
+    return this.http.get(`${environment.apiUrl}/members/r/all`)
       .pipe( map(res => res.data) );
   }
 }
