@@ -46,8 +46,7 @@ export class HomeComponent {
   }
 
   MODALS : {[name: string]: any} = {
-
-    member: SurveyComponent
+    'member': SurveyComponent
   };
 
   onSelectMenu(item: IMenu): void {
