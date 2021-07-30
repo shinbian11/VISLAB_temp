@@ -4,6 +4,9 @@ import {Member} from '../../models/member';
 import {MemberService} from '../../services/member.service';
 import { cloneDeep } from 'lodash-es';
 import {environment} from '../../../environments/environment';
+import { NgbModal,NgbActiveModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
+import { SurveyComponent } from '../survey/survey.component';
+import { Options } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-members',
@@ -17,13 +20,18 @@ export class MemberComponent implements OnInit {
     'index', 'name', 'role', 'degree', 'employment', 'email', 'is_alumni', 'image_path', 'actions'
   ];
 
-  constructor(private ms: MemberService) { }
+  MODALS : {[page: string]: any} = {
+    member : SurveyComponent
+  }
+
+  constructor(private ms: MemberService, private modalService : NgbModal) { }
 
   ngOnInit(): void {
     this.ms.getAll().subscribe(members => {
       this.members = members.sort((a, b) => a.index - b.index);
     });
   }
+
 
   onDrop(event: CdkDragDrop<Member[]>): void {
     moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
@@ -34,4 +42,10 @@ export class MemberComponent implements OnInit {
     this.members = cloneDeep(this.members); // refresh table
     // TODO: update index in database for each updated member
   }
+
+  onSurvey(page : string) : void {
+    const modalRef = this.modalService.open(this.MODALS[page]);
+    modalRef.componentInstance.renderPage = page; //이렇게 하면 page가 SurveyComponent에 전달됨!
+  }
+
 }

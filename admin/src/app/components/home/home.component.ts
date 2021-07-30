@@ -4,8 +4,7 @@ import { Subject, Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import {AuthService} from '../../services/auth.service';
 import {Router} from '@angular/router';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { SurveyComponent } from '../survey/survey.component';
+//import { SurveyComponent } from '../survey/survey.component';
 
 interface IMenu {
   label: string;
@@ -23,7 +22,7 @@ export class HomeComponent {
 
   surveyPage: string;
   selectedItem: IMenu;
-  par : string;
+  //par : string;
 
   menuItems: IMenu[] = [
     { label: 'members', icon: 'people', postfix: 'member', isSelected: true },
@@ -43,16 +42,15 @@ export class HomeComponent {
   constructor(
     private breakpointObserver: BreakpointObserver,
     private auth: AuthService,
-    private router: Router,
-    public modalService: NgbModal
+    private router: Router
     ) {
     this.selectedItem = this.menuItems[0];
     
   }
 
 
-  MODALS : {[name: string]: any} = {
-    member: SurveyComponent
+  //MODALS : {[name: string]: any} = {
+    //member: SurveyComponent
     // publication: SurveyComponent2,
     // research : SurveyComponent3,
     // course : SurveyComponent4
@@ -63,7 +61,7 @@ export class HomeComponent {
     // research : SurveyComponent,
     // course : SurveyComponent, ...
     // 이런 식으로 구성하되, SurveyComponent로 갈때 저 값을 들고 가고 싶습니다.
-  };
+ // };
 
   onSelectMenu(item: IMenu): void {
     this.selectedItem = item;
@@ -75,10 +73,10 @@ export class HomeComponent {
     this.router.navigate(['/login']).then();
   }
 
-  open(name: string) : void {
-    this.modalService.open(this.MODALS[name]);
-    this.par = name;
-    //alert(this.par);
-  }
+  // open(name: string) : void {
+  //   this.modalService.open(this.MODALS[name]);
+  //   this.par = name;
+  //   //alert(this.par);
+  // }
 
 }
