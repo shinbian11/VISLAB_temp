@@ -34,8 +34,7 @@ export class SurveyComponent implements OnInit {
 
   ngOnInit(): void {
 
-    //html 파일 form 부분 다르게 구성하는 부분
-    
+    //.html 파일 form 부분 다르게 구성하는 부분 
     this.array1.forEach(
       (element, idx) => {
         if(element === this.renderPage){
