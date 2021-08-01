@@ -1,3 +1,15 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar class="title-bar">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button> </button> 
+      <button mat-raised-button (click)="onSurvey('research')">
+        <mat-icon class="menu-icon">add_box</mat-icon>
+        <span class="button-label">New Research</span>
+      </button>  
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
 <div class="container" cdkDropListGroup>
     <mat-table class="mat-elevation-z8" cdkDropList
                [dataSource]="research"

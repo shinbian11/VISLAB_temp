@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {moveItemInArray, CdkDragDrop} from '@angular/cdk/drag-drop';
 import { Research } from '../../models/research';
-import { ResearchService } from '../../services/research.service'
+import { ResearchService } from '../../services/research.service';
 import { cloneDeep } from 'lodash-es';
 import {environment} from '../../../environments/environment';
+import { NgbModal,NgbActiveModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
+import { SurveyComponent } from '../survey/survey.component';
 
 @Component({
   selector: 'app-research',
@@ -18,7 +20,11 @@ export class ResearchComponent implements OnInit {
     'id','title','year','month','obliquedesc','members'
   ];
 
-  constructor(private rs: ResearchService) { }
+  MODALS : {[page: string]: any} = {
+    research : SurveyComponent
+  }
+
+  constructor(private rs: ResearchService, private modalService : NgbModal) { }
 
   ngOnInit(): void {
     this.rs.getAll().subscribe(research => {
@@ -35,4 +41,10 @@ export class ResearchComponent implements OnInit {
     this.research = cloneDeep(this.research); // refresh table
     // TODO: update index in database for each updated member
   }
+
+  onSurvey(page : string) : void {
+    const modalRef = this.modalService.open(this.MODALS[page]);
+    modalRef.componentInstance.renderPage = page; //이렇게 하면 page가 SurveyComponent에 전달됨!
+  }
+
 }

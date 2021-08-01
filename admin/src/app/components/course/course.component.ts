@@ -4,6 +4,8 @@ import { Course } from '../../models/course';
 import { CourseService } from '../../services/course.service'
 import { cloneDeep } from 'lodash-es';
 import {environment} from '../../../environments/environment';
+import { NgbModal,NgbActiveModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
+import { SurveyComponent } from '../survey/survey.component';
 
 @Component({
   selector: 'app-course',
@@ -19,7 +21,11 @@ export class CourseComponent implements OnInit {
     'id','type','title','subtitle','content','subcontent','prerequisite','semester_button'
   ];
 
-  constructor(private cs: CourseService) { }
+  MODALS : {[page: string]: any} = {
+    course : SurveyComponent
+  }
+
+  constructor(private cs: CourseService, private modalService : NgbModal) { }
 
   ngOnInit(): void {
     this.cs.getAll().subscribe(course => {
@@ -34,6 +40,11 @@ export class CourseComponent implements OnInit {
       m.id = i + 1;
     });
     this.course = cloneDeep(this.course); // refresh table
- 
   }
+
+  onSurvey(page : string) : void {
+    const modalRef = this.modalService.open(this.MODALS[page]);
+    modalRef.componentInstance.renderPage = page; //이렇게 하면 page가 SurveyComponent에 전달됨!
+  }
+
 }

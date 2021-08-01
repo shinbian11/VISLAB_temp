@@ -6,13 +6,13 @@ import { cloneDeep } from 'lodash-es';
 import {environment} from '../../../environments/environment';
 import { NgbModal,NgbActiveModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
 import { SurveyComponent } from '../survey/survey.component';
-import { Options } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-members',
   templateUrl: './member.component.html',
   styleUrls: ['./member.component.scss']
 })
+
 export class MemberComponent implements OnInit {
   apiUrl = environment.apiUrl;  // use symbolic link in production
   members: Member[] = [];
