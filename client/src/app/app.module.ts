@@ -28,6 +28,7 @@ import { SubComponent } from './components/sub/sub.component';
 import { ResearchListComponent } from './components/research-list/research-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MembersListComponent } from './components/members-list/members-list.component';
+import { ChartComponent } from './components/chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { MembersListComponent } from './components/members-list/members-list.com
     SubComponent,
     ResearchListComponent,
     MembersListComponent,
+    ChartComponent,
   
   ],
   imports: [
