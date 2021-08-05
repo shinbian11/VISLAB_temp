@@ -72,7 +72,7 @@ export class ChartComponent implements OnInit {
     //pie chart의 안쪽 반지름/바깥쪽 반지름 에 해당하는 값을 준다. innerRadius 가 0이면 가운데가 뚫려 있지 않은 원 모양이 된다.
     const arcR = d3.arc()
       .innerRadius(0) //innerRadius가 0이면 가운데가 뚫려 있지 않은 pie chart가 된다. 가운데가 뚫려 있으면 donut chart이다.
-      .outerRadius(170)
+      .outerRadius(100)
       .cornerRadius(15)
    
     //chart의 width, height, background 색깔에 해당하는 값을 준다. #f0dad5는 연한 분홍색 계열이다.
