@@ -5,9 +5,11 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+
       <main>
         <router-outlet></router-outlet>
       </main>
+      
       <mat-toolbar color="primary">
         <mat-toolbar-row>
           <img src="assets/images/logo_ssu.png" alt="SSU" class="logo">
