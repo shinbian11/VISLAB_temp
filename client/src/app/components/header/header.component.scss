@@ -1,12 +1,14 @@
 a {
   font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
   text-decoration: none;
-  color: #6E6E6E;
+  color: gray;
+  font-weight: bolder;
 }
-a:hover, a:active{
-  color: #5CAED7;
-  text-decoration: underline;
-}
+
+// a:hover, a:active{
+//   color: #00729A;
+//   text-decoration: underline;
+// }
 .navigation-items{
   list-style-type: none;
   padding: 0;
@@ -20,6 +22,7 @@ mat-toolbar{
     padding-top: 5px;
     margin: auto;
   }
+
 }
 @media(max-width: 959px){
   mat-toolbar{

@@ -1,10 +1,20 @@
+<div class="layer bg-white-smoke">
+  <!-- <article class="banner"></article> -->
+  <app-banner></app-banner>
+  <div class="empty-space"></div>
 
+  <div class="bg-white-smoke">
+      <div class="layer-inner">
+          <article class="members-all">
 
-<div class="container">
- 
-    <div *ngFor="let m of Members">
-        <app-members-list [memberList]='m'></app-members-list> 
-    </div> 
+            <div *ngFor="let m of Members">
+              <app-members-list [memberList]='m'></app-members-list> 
+            </div> 
+
+          </article>
+      </div>
+  </div>
+</div>
 
  <!-- 
   
@@ -240,6 +250,5 @@
   </div>
 
 -->
-</div>
 
 

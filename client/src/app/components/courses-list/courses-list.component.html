@@ -1,0 +1,33 @@
+<h1 class="courses-domain">{{courseList[0].type}}</h1>
+
+<ul class="courses-list">
+  
+    <div *ngFor = "let co of courseList">
+
+        <li class="course-item">
+
+            <section class="brief-introduction">
+                <h5 class="course-name">{{co.title}}</h5>
+                <h6 class="course-one-line-introduction">{{co.subtitle}}</h6>
+            </section>
+
+            <section class="detailed-introduction">
+                <br>
+                <h6 class="orange">Description</h6>
+                <h6>{{co.content}}</h6>
+                <br>
+                <h6>{{co.subcontent}}</h6>
+                <br>
+                <h6 class="orange">Prerequisite</h6>
+                <h6>{{co.prerequisite}}</h6>
+                <br>
+                <h6 class="orange">Year of opening</h6>
+                <span>TBD</span>
+
+            </section>
+
+        </li>
+
+    </div>
+
+</ul> 

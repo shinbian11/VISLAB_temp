@@ -1,78 +1,164 @@
-.section {
-    display: flex;
-    margin-bottom: 10px;
+// .section {
+//     display: flex;
+//     margin-bottom: 10px;
 
-    .header {
+//     .header {
       
-      .label {
-        padding-top: 10px;
-        min-width: 55px;
-        height: auto;
-        background-color: white;
-        text-align: left;
-        font-weight: bold;
+//       .label {
+//         padding-top: 10px;
+//         min-width: 55px;
+//         height: auto;
+//         background-color: white;
+//         text-align: left;
+//         font-weight: bold;
 
-        .sub {
-          font-size: x-small;
-        }
-      }
-    }
+//         .sub {
+//           font-size: x-small;
+//         }
+//       }
+//     }
 
-    .content {
+//     .content {
+//       padding-left: 30px;
+//       .person {
+//         padding: 15px;
+//         .image {
+//           img {
+//             width: 150px;
+//             height: 150px;
+//             object-fit: cover;
+//             border-radius: 100%;
+//           }
+//         }
 
-      .person {
-        padding: 15px;
-        .image {
-          img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 100%;
-          }
-        }
+//         .desc {
+//           .name {
+//             font-weight: bold;
+//             font-size: medium;
+//           }
+//           .interest {
+//             font-size: small;
+//             color: #888888;
+//           }
+//           .links {
+//             color: #888888;
+//           }
+//           .emp {
+//             color: #888888;
+//           }
+//         }
 
-        .desc {
-          .name {
-            font-weight: bold;
-            font-size: medium;
-          }
-          .interest {
-            font-size: small;
-            color: #888888;
-          }
-          .links {
-            color: #888888;
-          }
-          .emp {
-            color: #888888;
-          }
-        }
+//       }
+//     }
+//   }
+//   .section{
+//     .header {
+//       background: repeating-linear-gradient(
+//           45deg,
+//           #FFD360,
+//           #FFD360 1px,
+//           white 2px,
+//           white 4px
+//       );
+//     }
 
-      }
-    }
-  }
-  .section{
-    .header {
-      background: repeating-linear-gradient(
-          45deg,
-          #FFD360,
-          #FFD360 1px,
-          white 2px,
-          white 4px
-      );
-    }
-
-  // .section:nth-of-type(odd) {
-  //   .header {
-  //     background: repeating-linear-gradient(
-  //         45deg,
-  //         #8BD8E7,
-  //         #8BD8E7 1px,
-  //         white 2px,
-  //         white 4px
-  //     );
-  //   }
-  // }
+//   // .section:nth-of-type(odd) {
+//   //   .header {
+//   //     background: repeating-linear-gradient(
+//   //         45deg,
+//   //         #8BD8E7,
+//   //         #8BD8E7 1px,
+//   //         white 2px,
+//   //         white 4px
+//   //     );
+//   //   }
+//   // }
 
   
+// }
+.member-collection-collection,
+.member-collection-specified-year,
+.member-collection {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+.member-collection-specified-year {
+  margin-bottom: 8vw;
+}
+
+.specified-year {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1.5vw;
+}
+
+.member-item {
+  display: inline-block;
+  width: calc((1160px - 2vw) / 3);
+  height: 450px;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-right: 1vw;
+}
+
+.member-collection {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow-y:hidden;
+  overflow-x:auto;
+ 
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.member-collection .empty-space-between-item {
+  width: 1vw;
+  height: 100%;
+}
+
+// .member-item:hover .member-image{
+//   height: 100%;
+// }
+
+// .member-item .member-image {
+//   height: 50%;
+// }
+
+.member-item .detailed-member-info {
+  display: none;
+  width: calc((1100px - 2vw) / 3);
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  white-space: break-spaces;
+}
+
+.member-item .brief-member-info {
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%
+    }
+
+  padding: 20px 20px 20px 20px;
+  width: calc((1100px - 2vw) / 3);
+  text-align: left;
+  white-space: break-spaces;
+}
+
+.member-item .member-title {
+  color: #00729A;
+  font-weight: bold;
+  font-size : larger;
+}
+
+.member-item .member-interest {
+  color: black;
+  //font-weight: bold;
+}
+

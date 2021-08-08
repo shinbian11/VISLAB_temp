@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="section">
     <div class="header">
       <div class="label">
@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="content">
-      <!---->
+      
       <mat-card>
         <mat-card-header> 
           <mat-card-title>Data Structure</mat-card-title>
@@ -35,7 +35,7 @@
           </mat-chip-list>
         </mat-card-footer>
       </mat-card>
-   <!---->
+   
       <mat-card>
         <mat-card-header>
           <mat-card-title>Computer Vision</mat-card-title>
@@ -121,4 +121,30 @@
     </div>
   </div>
 
+</div> -->
+<div class="layer bg-white-smoke">
+
+  <app-banner></app-banner>
+  <div class="empty-space"></div>
+
+  <div class="bg-white-smoke">
+    <div class="layer-inner">
+
+      <article class="undergraduate-graduate-courses">
+
+        <div *ngFor="let c of Courses">
+
+          <app-courses-list [courseList]='c'></app-courses-list> 
+
+          <div class = "empty-space"></div>
+
+        </div>
+
+      </article>
+
+    </div>
+    <span class="blank"></span>
+  </div>
+
 </div>
+

@@ -47,4 +47,133 @@
 //     }
       
 //   }
+.empty-space {
+    height: 8vw;
+    background-color: whitesmoke;
+  }
+
+  
+  .empty-space {
+    height: 8vw;
+  }
+  
+  .layer {
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
+  }
+
+  .layer .layer-inner {
+    padding: 0;
+    margin: 0;
+    display:inline-block;
+    vertical-align:middle;
+  
+    width: 94vw;
+    max-width: 1160px;
+  }
+
+  .layer .blank {
+    display:inline-block;
+    width:0;
+    height:100%;
+    vertical-align:middle;
+  }
+  
+  .bg-white-smoke {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+
+// .layer-inner {
+//     padding: 0;
+//     margin: 0;
+//     display:inline-block;
+//     vertical-align:middle;
+  
+//     width: 94vw;
+//     max-width: 1160px;
+// }
+
+  
+
+
+//   .specified-year {
+//     font-size: larger;
+//     font-weight: bold;
+//     text-align: left;
+//     margin-bottom: 1.5vw;
+//   }
+
+// .research-item {
+//     width: calc((1160px - 2vw) / 3);
+
+//     .detailed-research-info 
+//     {
+//         display: none;
+//         padding-top: 20px;
+//         text-align: center;
+//         white-space: break-spaces;
+//     } 
+
+//     .container
+//     {
+//         .image{
+//             display: inline-block;
+            
+//             height: 380px;
+            
+//             border: 1px solid white;
+//             margin-right: 1vw;
+//         }
+    
+//         .brief-research-info {
+    
+//            .text
+//            {    
+//                 width: calc((1160px - 1vw) / 3);
+//                 padding: 0 20px 0 20px;
+//                 text-align: left;
+//                 white-space: break-spaces;
+
+//                 .research-title {
+//                     font-size: larger;
+//                     color: #00729A;
+//                     font-weight: bold;
+//                   }
+                  
+//                 .research-member {
+//                     font-size: small;
+//                     color: orange;
+//                     font-weight: bold;
+//                   }
+//                 .research-desc {
+//                     font-size: small;
+//                     color: black;
+//                     font-weight: bold;
+//                 } 
+//            }
+            
+//         }
+//     }
+//   }
+
+//   .research-item:hover .detailed-research-info{
+//     display: block;
+//     opacity: 1;
+//   }
+
+//   .research-item:hover .container{
+//     opacity: 0.3;
+//   }
+
+  
+  
+  
+  
+  
+  
 

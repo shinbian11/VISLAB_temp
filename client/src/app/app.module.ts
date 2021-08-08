@@ -29,6 +29,8 @@ import { ResearchListComponent } from './components/research-list/research-list.
 import { HttpClientModule } from '@angular/common/http';
 import { MembersListComponent } from './components/members-list/members-list.component';
 import { ChartComponent } from './components/chart/chart.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { CoursesListComponent } from './components/courses-list/courses-list.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { ChartComponent } from './components/chart/chart.component';
     ResearchListComponent,
     MembersListComponent,
     ChartComponent,
+    BannerComponent,
+    CoursesListComponent,
   
   ],
   imports: [

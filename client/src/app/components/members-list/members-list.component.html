@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="section">
  
    <div class="header">
@@ -11,7 +11,7 @@
     </div>
 
     
-    <div class="content" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="0px">
+    <div class="content" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="30px">
         
         <div *ngFor = "let m of memberList">
             <div class="person" fxFlex="50" fxFlex.xs="100">
@@ -35,5 +35,28 @@
             </div>
         </div>
     </div>
- </div>
+ </div> -->
+
+ <!-------------------------->
+<li class="member-collection-specified-year">
+    <h1 class="specified-year">{{memberList[0].degree}}</h1>
+
+    <ul class="member-collection">
+        <div  *ngFor = "let m of memberList" >
+            <li class="member-item">
+                <!-- </section> -->
+                <section class="brief-member-info">
+                    <img src="{{m.image_path}}" alt="{{m.image_org_name}}" class = "image"> 
+                    <br>      
+                <p class="member-title">{{m.name}} / {{m.role}}</p>
+                <p class ="member-interest">{{m.interest}}</p>
+                <div class="links">
+                    <a mat-icon-button href="mailto:{{m.email}}"><mat-icon>mail</mat-icon></a>
+                    <a mat-icon-button href="#"><mat-icon>home</mat-icon></a>
+                </div>
+                </section>
+            </li>
+        </div>
+    </ul>
+</li>
     

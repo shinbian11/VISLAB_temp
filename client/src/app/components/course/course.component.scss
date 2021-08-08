@@ -1,81 +1,141 @@
-.container {
-  .section {
-    display: flex;
+// .container {
+//   .section {
+//     display: flex;
 
-    .header {
-      .label {
-        padding-top: 20px;
-        min-width: 50px;
-        height: auto;
-        background-color: white;
-        text-align: center;
-        font-weight: bold;
-      }
-    }
+//     .header {
+//       .label {
+//         padding-top: 20px;
+//         min-width: 50px;
+//         height: auto;
+//         background-color: white;
+//         text-align: center;
+//         font-weight: bold;
+//       }
+//     }
 
-    .content {
-      padding-top: 20px;
-      padding-left: 10px;
-      width: 100%;
-      mat-card {
-        margin-bottom: 10px;
-        padding: 10px;
-        mat-card-header {
-          mat-card-title {
-            color: #1E7FA5;
-          }
-          mat-card-subtitle {
-          }
-        }
+//     .content {
+//       padding-top: 20px;
+//       padding-left: 10px;
+//       width: 100%;
+//       mat-card {
+//         margin-bottom: 10px;
+//         padding: 10px;
+//         mat-card-header {
+//           mat-card-title {
+//             color: #1E7FA5;
+//           }
+//           mat-card-subtitle {
+//           }
+//         }
 
-        mat-card-content {
-          padding: 20px 20px 10px 20px;
-          margin: 0;
-        }
-        mat-card-footer {
-          padding: 10px 30px 20px 30px;
-          .mat-standard-chip {
-            min-height: 20px;
-          }
-          mat-chip {
-            font-size: x-small;
-          }
-        }
-      }
-    }
-  }
+//         mat-card-content {
+//           padding: 20px 20px 10px 20px;
+//           margin: 0;
+//         }
+//         mat-card-footer {
+//           padding: 10px 30px 20px 30px;
+//           .mat-standard-chip {
+//             min-height: 20px;
+//           }
+//           mat-chip {
+//             font-size: x-small;
+//           }
+//         }
+//       }
+//     }
+//   }
 
-  .section:nth-of-type(odd) {
-    .header {
-      background: repeating-linear-gradient(
-          45deg,
-          #8BD8E7,
-          #8BD8E7 1px,
-          white 2px,
-          white 4px
-      );
-    }
-  }
+//   .section:nth-of-type(odd) {
+//     .header {
+//       background: repeating-linear-gradient(
+//           45deg,
+//           #8BD8E7,
+//           #8BD8E7 1px,
+//           white 2px,
+//           white 4px
+//       );
+//     }
+//   }
 
-  .section:nth-of-type(even) {
-    .header {
-      background: repeating-linear-gradient(
-          45deg,
-          #FFD360,
-          #FFD360 1px,
-          white 2px,
-          white 4px
-      );
-    }
+//   .section:nth-of-type(even) {
+//     .header {
+//       background: repeating-linear-gradient(
+//           45deg,
+//           #FFD360,
+//           #FFD360 1px,
+//           white 2px,
+//           white 4px
+//       );
+//     }
 
-    .content {
-      mat-card {
-        mat-card-header {
-          mat-card-title {
-            color: #EBA22E;
-          }
-        }
-      }
-    }
-  }
+//     .content {
+//       mat-card {
+//         mat-card-header {
+//           mat-card-title {
+//             color: #EBA22E;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+h1,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.empty-space {
+  height: 8vw;
+}
+
+.layer {
+  top:0;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+.layer .layer-inner {
+  padding: 0;
+  margin: 0;
+  display:inline-block;
+  vertical-align:middle;
+
+  width: 94vw;
+  max-width: 1160px;
+}
+
+.layer .blank {
+  display:inline-block;
+  width:0;
+  height:100%;
+  vertical-align:middle;
+}
+
+.bg-white-smoke {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+/*banner*/
+article.banner{
+  width: 100%;
+  height: 70vh;
+  background-color: #00729A;
+}
+
+article.undergraduate-graduate-courses {
+  width: 94vw;
+  max-width: 1160px;
+  text-align: left;
+
+  margin-bottom: 8vw;
 }

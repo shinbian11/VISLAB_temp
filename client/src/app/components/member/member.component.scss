@@ -1,77 +1,126 @@
+// .layout-wrapper {
+//   height: 100%;
+// }
 
-.container {
-  .section {
-    display: flex;
-    margin-bottom: 10px;
+// .flex-wrapper {
+//   height: 100%;
+//   max-width: 1280px;
+// }
 
-    .header {
-      .label {
-        padding-top: 10px;
-        min-width: 55px;
-        height: auto;
-        background-color: white;
-        text-align: left;
-        font-weight: bold;
+// .container {
 
-        .sub {
-          font-size: x-small;
-        }
-      }
-    }
+//   .section {
+//     display: flex;
+//     margin-bottom: 10px;
 
-    .content {
+//     .header {
+//       .label {
+//         padding-top: 10px;
+//         min-width: 55px;
+//         height: auto;
+//         background-color: white;
+//         text-align: left;
+//         font-weight: bold;
 
-      .person {
-        padding: 15px;
-        .image {
-          img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 100%;
-          }
-        }
+//         .sub {
+//           font-size: x-small;
+//         }
+//       }
+//     }
 
-        .desc {
-          .name {
-            font-weight: bold;
-          }
-          .interest {
-            font-size: small;
-            color: #888888;
-          }
-          .links {
-            color: #888888;
-          }
-          .emp {
-            color: #EBA22E;
-          }
-        }
-      }
-    }
-  }
+//     .content {
 
-  .section:nth-of-type(odd) {
-    .header {
-      background: repeating-linear-gradient(
-          45deg,
-          #8BD8E7,
-          #8BD8E7 1px,
-          white 2px,
-          white 4px
-      );
-    }
-  }
+//       .person {
+//         padding: 15px;
+//         .image {
+//           img {
+//             width: 150px;
+//             height: 150px;
+//             object-fit: cover;
+//             border-radius: 100%;
+//           }
+//         }
 
-  .section:nth-of-type(even) {
-    .header {
-      background: repeating-linear-gradient(
-          45deg,
-          #FFD360,
-          #FFD360 1px,
-          white 2px,
-          white 4px
-      );
-    }
-  }
+//         .desc {
+//           .name {
+//             font-weight: bold;
+//           }
+//           .interest {
+//             font-size: small;
+//             color: #888888;
+//           }
+//           .links {
+//             color: #888888;
+//           }
+//           .emp {
+//             color: #EBA22E;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .section:nth-of-type(odd) {
+//     .header {
+//       background: repeating-linear-gradient(
+//           45deg,
+//           #8BD8E7,
+//           #8BD8E7 1px,
+//           white 2px,
+//           white 4px
+//       );
+//     }
+//   }
+
+//   .section:nth-of-type(even) {
+//     .header {
+//       background: repeating-linear-gradient(
+//           45deg,
+//           #FFD360,
+//           #FFD360 1px,
+//           white 2px,
+//           white 4px
+//       );
+//     }
+//   }
+// }
+.empty-space {
+  height: 8vw;
+  background-color: whitesmoke;
+}
+
+
+.empty-space {
+  height: 8vw;
+}
+
+.layer {
+  top:0;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+.layer .layer-inner {
+  padding: 0;
+  margin: 0;
+  display:inline-block;
+  vertical-align:middle;
+
+  width: 94vw;
+  max-width: 1160px;
+}
+
+.layer .blank {
+  display:inline-block;
+  width:0;
+  height:100%;
+  vertical-align:middle;
+}
+
+.bg-white-smoke {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: whitesmoke;
 }
