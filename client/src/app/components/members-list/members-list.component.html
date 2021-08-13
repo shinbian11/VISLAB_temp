@@ -39,15 +39,16 @@
 
  <!-------------------------->
 <li class="member-collection-specified-year">
+
     <h1 class="specified-year">{{memberList[0].degree}}</h1>
 
     <ul class="member-collection">
         <div  *ngFor = "let m of memberList" >
             <li class="member-item">
-                <!-- </section> -->
+
                 <section class="brief-member-info">
                     <img src="{{m.image_path}}" alt="{{m.image_org_name}}" class = "image"> 
-                    <br>      
+                    <br>
                 <p class="member-title">{{m.name}} / {{m.role}}</p>
                 <p class ="member-interest">{{m.interest}}</p>
                 <div class="links">
@@ -58,5 +59,7 @@
             </li>
         </div>
     </ul>
+
 </li>
+
     
