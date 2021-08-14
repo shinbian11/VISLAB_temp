@@ -99,23 +99,23 @@ div {
   left:0;
   width:100%;
   text-align:center;
-}
 
-.layer .layer-inner {
-  padding: 0;
-  margin: 0;
-  display:inline-block;
-  vertical-align:middle;
+  .layer-inner {
+    padding: 0;
+    margin: 0;
+    display:inline-block;
+    vertical-align:middle;
+  
+    width: 94vw;
+    max-width: 1160px;
+  }
 
-  width: 94vw;
-  max-width: 1160px;
-}
-
-.layer .blank {
-  display:inline-block;
-  width:0;
-  height:100%;
-  vertical-align:middle;
+  .blank {
+    display:inline-block;
+    width:0;
+    height:100%;
+    vertical-align:middle;
+  }
 }
 
 .bg-white-smoke {
@@ -125,17 +125,21 @@ div {
   background-color: whitesmoke;
 }
 
-/*banner*/
-article.banner{
-  width: 100%;
-  height: 70vh;
-  background-color: #00729A;
-}
 
-article.undergraduate-graduate-courses {
-  width: 94vw;
-  max-width: 1160px;
-  text-align: left;
+article{
 
-  margin-bottom: 8vw;
+  .undergraduate-graduate-courses {
+    width: 94vw;
+    max-width: 1160px;
+    text-align: left;
+
+    margin-bottom: 8vw;
+  }
+
+  .banner{
+    width: 100%;
+    height: 70vh;
+    background-color: #00729A;
+  }
+
 }

@@ -1,3 +1,28 @@
+<li class="research-collection-specified-year">
+    <h1 class="specified-year">{{receivedList[0].year}}</h1>
+    <br>
+    <ul class="research-collection">
+        <div  *ngFor = "let re of receivedList" >
+            <li class="research-item">
+
+                <!-- <section class="research-image transform-detailed-research-info"> -->
+                <section class="detailed-research-info">
+                    <button id="btn">Details</button>
+                </section>
+                <!-- </section> -->
+
+                <section class="brief-research-info">
+                    <img src="{{re.image_path}}" alt="{{re.image_org_name}}" class = "image"> 
+                    <br><br>       
+                    <p class="research-title">{{re.title}}</p>
+                    <p class ="research-member">{{re.members}} / {{re.year}}</p>
+                    <p class ="research-desc">{{re.obliquedesc}}</p>
+                </section>
+            </li>
+        </div>
+    </ul>
+</li>
+
 <!-- <div class = "section">
 
     <div class="header">
@@ -58,25 +83,3 @@
     </ul>
 </div> -->
 
-<li class="research-collection-specified-year">
-    <h1 class="specified-year">{{receivedList[0].year}}</h1>
-
-    <ul class="research-collection">
-        <div  *ngFor = "let re of receivedList" >
-            <li class="research-item">
-                <!-- <section class="research-image transform-detailed-research-info"> -->
-                    <section class="detailed-research-info">
-                        <button id="btn">Details</button>
-                    </section>
-                <!-- </section> -->
-                <section class="brief-research-info">
-                <img src="{{re.image_path}}" alt="{{re.image_org_name}}" class = "image"> 
-                <br><br>       
-                <p class="research-title">{{re.title}}</p>
-                <p class ="research-member">{{re.members}} / {{re.year}}</p>
-                <p class ="research-desc">{{re.obliquedesc}}</p>
-                </section>
-            </li>
-        </div>
-    </ul>
-</li>

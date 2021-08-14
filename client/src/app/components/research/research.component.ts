@@ -19,7 +19,7 @@ export class ResearchComponent implements OnInit {
   researchTotal : IResearch[]=[];
   researchYear : IResearch[][]=[];
 
-  year = [2021,2020,2019,2018,2017];
+  year = [2021,2020,2019,2018];
   
   constructor(private rs: ResearchService) { }
 
