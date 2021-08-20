@@ -15,6 +15,7 @@ const checkPassword = (plain, hashed, handler) => { bcrypt.compare(plain, hashed
 POST_FORM(router, '/login', upload.none(), (req, res) => {
   try {
     db.admins.readByUsername(req.body.username).then((row) => {
+      
       if (row) {
         checkPassword(req.body.password, row.password, (passed) => {
           if (passed) { res.status(200).send({'success': true, 'token': genToken(row.username)}); }
