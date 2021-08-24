@@ -8,6 +8,17 @@ class MembersRepository {
     return this.db.one('', { ...values, enrolled_year: +values.year, enrolled_month: +values.month });
   }
 
+  // async post()
+  // {
+  //   const { semesters, ...courseInfo } = req.body;
+  //   db.courses.create(courseInfo)
+  //     .then((course) => {
+  //       console.log(course);
+  //       console.log(semesters);
+  //     });
+  //   res.send(req.body);
+  // }
+
   async readAll() {
     return this.db.any('SELECT * from members');
   }
@@ -20,10 +31,6 @@ class MembersRepository {
     return this.db.one('SELECT count(*) FROM members', [], a => +a.count);
   }
 
-  async post() {
-      //이거 작성하고 제대로 작동하는지 검사하는 법이 궁금함...
-      //return this.db.one('INSERT INTO members VALUES(....?)')
-  }
 }
 
 module.exports = MembersRepository;
