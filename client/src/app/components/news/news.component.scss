@@ -1,0 +1,49 @@
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.empty-space {
+  height: 8vw;
+}
+
+.layer {
+  top:0;
+  left:0;
+  width:100%;
+  text-align:center;
+
+  .layer-inner {
+    padding: 0;
+    margin: 0;
+    display:inline-block;
+    vertical-align:middle;
+  
+    width: 94vw;
+    max-width: 1160px;
+  }
+
+  .blank {
+    display:inline-block;
+    width:0;
+    height:100%;
+    vertical-align:middle;
+  }
+}
+
+
+.bg-white-smoke {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.news {
+  width: 94vw;
+  max-width: 1160px;
+  text-align: center;
+  margin-bottom: 8vw;
+
+}
+

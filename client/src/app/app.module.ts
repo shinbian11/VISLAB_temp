@@ -31,6 +31,8 @@ import { MembersListComponent } from './components/members-list/members-list.com
 import { ChartComponent } from './components/chart/chart.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CoursesListComponent } from './components/courses-list/courses-list.component';
+import { NewsComponent } from './components/news/news.component';
+import { NoticeComponent } from './components/notice/notice.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { CoursesListComponent } from './components/courses-list/courses-list.com
     ChartComponent,
     BannerComponent,
     CoursesListComponent,
+    NewsComponent,
+    NoticeComponent,
   
   ],
   imports: [

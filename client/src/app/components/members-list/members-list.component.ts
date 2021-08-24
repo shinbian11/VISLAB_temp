@@ -11,11 +11,10 @@ import { MemberService } from 'src/app/shared/services/member.service';
 export class MembersListComponent implements OnInit {
 
   @Input() memberList : IMember[]=[];
-
+  
   constructor() { }
 
   ngOnInit(): void {
-  
   }
 
   

@@ -12,7 +12,7 @@ import {environment} from '../../../environments/environment';
 export class MemberComponent implements OnInit {
 
   apiUrl = environment.apiUrl;  // use symbolic link in production
-  members: IMember[] = [];
+  members: IMember[] = []
   Members: IMember[][] = [];
   degree_list = ["Prof","PhD","MS","Intern","Alumni"];
 

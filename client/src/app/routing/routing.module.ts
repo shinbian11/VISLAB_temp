@@ -6,6 +6,8 @@ import { MemberComponent } from '../components/member/member.component';
 import { PublicationComponent } from '../components/publication/publication.component';
 import { ResearchComponent } from '../components/research/research.component';
 import { CourseComponent } from '../components/course/course.component';
+import { NewsComponent } from '../components/news/news.component';
+import { NoticeComponent } from '../components/notice/notice.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: 'research', component: ResearchComponent },
   { path: 'publications', component: PublicationComponent },
   { path: 'courses', component: CourseComponent },
+  { path: 'news', component: NewsComponent },
+  { path: 'notice', component: NoticeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
