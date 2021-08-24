@@ -5,5 +5,4 @@ module.exports = {
   Members: require('./members'),
   Publications: require('./publications'),
   Research: require('./research'),
-  News : require('./news')
 }

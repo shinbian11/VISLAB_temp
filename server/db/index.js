@@ -2,7 +2,7 @@ const promise = require('bluebird');
 const pgPromise = require('pg-promise');
 const config = require('../config/config.json');
 const { Diagnostics } = require('./diagnostics');
-const { Admins, Courses, Events, Members, Publications, Research, News } = require('./repos');
+const { Admins, Courses, Events, Members, Publications, Research } = require('./repos');
 
 const initOptions = {
   promiseLib: promise,
@@ -13,7 +13,6 @@ const initOptions = {
     obj.members = new Members(obj, pgp);
     obj.publications = new Publications(obj, pgp);
     obj.research = new Research(obj, pgp);
-    obj.news = new News(obj, pgp);
   }
 }
 const pgp = pgPromise(initOptions);

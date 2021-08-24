@@ -15,7 +15,7 @@ export class NewsService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<INews[]> {
-    return this.http.get<IResponse>(`${environment.apiUrl}/news/r/all`)
+    return this.http.get<IResponse>(`${environment.apiUrl}/events/r/all`)
       .pipe( map(res => res.data) );
   }
 

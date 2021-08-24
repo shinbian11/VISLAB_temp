@@ -12,10 +12,10 @@ function handleAndRespond(handler) {
 }
 
 // CRUD
-function POST(router, url, handler) { router.post(url, handleAndRespond(handler)); }
-function GET(router, url, handler) { router.get(url, verifyToken, handleAndRespond(handler)); }
-function PUT(router, url, handler) { router.get(url, handleAndRespond(handler)); }
-function DELETE(router, url, handler) { router.delete(url, handleAndRespond(handler)); }
+function POST(router, url, upload, handler) { router.post(url, upload, handleAndRespond(handler)); }
+function GET(router, url, upload, handler) { router.get(url, upload, verifyToken, handleAndRespond(handler)); }
+function PUT(router, url, upload, handler) { router.get(url, hupload, andleAndRespond(handler)); }
+function DELETE(router, url, upload, handler) { router.delete(url, upload, handleAndRespond(handler)); }
 
 function POST_FORM(router, url, upload, handler) { router.post(url, upload, handler); }
 function GET_FORM(router, url, upload, handler) { router.get(url, upload, handler); }

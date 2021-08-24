@@ -14,7 +14,6 @@ const eventsRouter = require('./routes/events');
 const membersRouter = require('./routes/members');
 const publicationsRouter = require('./routes/publications');
 const researchRouter = require('./routes/research');
-const newsRouter = require('./routes/news');
 
 const app = express();
 app.use(cors());
@@ -40,7 +39,6 @@ app.use('/events', eventsRouter);
 app.use('/members', membersRouter);
 app.use('/publications', publicationsRouter);
 app.use('/research', researchRouter);
-app.use('/news', newsRouter);
 
 app.use(function(req, res, next) {
   next(createError(404));

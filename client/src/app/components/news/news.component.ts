@@ -16,13 +16,10 @@ export class NewsComponent implements OnInit {
   News : INews[]=[];
 
   ngOnInit(): void {
-    console.log('asdf'+this.News)
     this.ns.getAll().subscribe(News => {
-      
        this.News = News.sort((a, b) => a.id - b.id);
-       console.log('plz...! '+this.News)
+       
        });
-
-  }
+      }
 
 }

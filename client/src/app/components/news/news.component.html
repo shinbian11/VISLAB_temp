@@ -1,22 +1,29 @@
 <div class="layer bg-white-smoke">
+  <!-- <article class="banner"></article> -->
+  <app-banner></app-banner>
+  <div class="empty-space"></div>
 
-    <app-banner></app-banner>
-
-    <div class="empty-space"></div>
-    
-    <div class="bg-white-smoke">
+  <div class="bg-white-smoke">
       <div class="layer-inner">
-  
-        <div class="news">
- 
-          <div *ngFor="let n of News">
-            {{n}}
-          </div> 
+          <article class="news-all">
 
-        </div>
-  
+            <div class = "left">
+              <div *ngFor="let n of News">
+                <div class = "left-list">
+                  <div>{{n.title}}</div>
+                  <div>{{n.description}}</div>
+                  <div>{{n.date}}</div>  
+                  <!-- <div>title</div>
+                  <div>description</div>
+                  <div>date</div>  -->
+                </div>
+              </div>
+            </div>
+            <div class = "right">
+              <div>asdf</div>
+            </div>
+
+          </article>
       </div>
-      <span class="blank"></span>
-    </div>
-  
   </div>
+</div>
