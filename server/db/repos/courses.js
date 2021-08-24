@@ -3,10 +3,24 @@ class CoursesRepository {
     this.db = db;
     this.pgp = pgp;
   }
+
+  // db/repos : 실제 코드들이 작동하는 부분
+
   async create(values) {
     return this.db.one('INSERT INTO courses(${this:name}) VALUES(${this:csv}) RETURNING *',
       {...values, is_visible: values.is_visible === 'true'});
   }
+
+  // async post()
+  // {
+  //   const { semesters, ...courseInfo } = req.body;
+  //   db.courses.create(courseInfo)
+  //     .then((course) => {
+  //       console.log(course);
+  //       console.log(semesters);
+  //     });
+  //   res.send(req.body);
+  // }
 
   async readAll() {
     return this.db.any('SELECT * from courses');
