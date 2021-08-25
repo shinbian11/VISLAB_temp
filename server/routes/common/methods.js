@@ -14,7 +14,7 @@ function handleAndRespond(handler) {
 // CRUD
 function POST(router, url, upload, handler) { router.post(url, upload, handleAndRespond(handler)); }
 function GET(router, url, upload, handler) { router.get(url, upload, verifyToken, handleAndRespond(handler)); }
-function PUT(router, url, upload, handler) { router.get(url, hupload, andleAndRespond(handler)); }
+function PUT(router, url, upload, handler) { router.get(url, upload, andleAndRespond(handler)); }
 function DELETE(router, url, upload, handler) { router.delete(url, upload, handleAndRespond(handler)); }
 
 function POST_FORM(router, url, upload, handler) { router.post(url, upload, handler); }
