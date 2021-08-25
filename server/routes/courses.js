@@ -5,8 +5,12 @@ const upload = multer();
 const { GET, DELETE, POST, PUT } = require('./common/methods');
 const { db } = require('../db');
 
+
+//질문 1) const { semesters, ...courseInfo } .. 이거는 어떤 기준이지..? page 마다 다르게 설정해야 하나? (12번째 줄)
+//질문 2) PUT(router,) ..여기 url은 어떤 기준으로 정하지?
+
 router.post('/c/one', upload.none(), (req, res) => {
-  const { semesters, ...courseInfo } = req.body; //const { semesters, ...courseInfo } .. 이거는 어떤 기준이지..? page 마다 다르게 설정해야 하나?
+  const { semesters, ...courseInfo } = req.body; 
   db.courses.create(courseInfo)
     .then((course) => {
       console.log(course);
