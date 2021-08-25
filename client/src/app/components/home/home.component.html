@@ -240,35 +240,16 @@
       
           <table class="news-table">
             <tr>
-              <th>Title</th>
-              <th>Status</th>
               <th>Date</th>
+              <th>Title</th>
               <th>Views</th>
             </tr>
-            <tr>
-              <td><a>제작 중</a></td>
-              <td>진행 중</td>
-              <td>2021.05.03~</td>
-              <td>3</td>
+            <tr *ngFor = "let n of News">
+              <td>{{n.date}}</td>
+              <td><a>{{n.title}}</a></td>
+              <td>100</td>
             </tr>
-            <tr>
-              <td><a>제작 중</a></td>
-              <td>진행 중</td>
-              <td>2021.05.03~</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td><a>제작 중</a></td>
-              <td>진행 중</td>
-              <td>2021.05.03~</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td><a>제작 중</a></td>
-              <td>진행 중</td>
-              <td>2021.05.03~</td>
-              <td>3</td>
-            </tr>
+            
           </table>
         </article>
       
@@ -280,8 +261,8 @@
           <table class="notice-table">
             <tr>
               <th>Title</th>
-              <th>Status</th>
               <th>Date</th>
+              <th>Status</th>
               <th>Views</th>
             </tr>
             <tr>

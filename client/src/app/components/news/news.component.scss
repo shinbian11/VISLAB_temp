@@ -138,6 +138,27 @@
     box-shadow: 15px 15px 30px #e1e9f5;
     //margin-right: 1vw;
     margin-bottom: 4vw;
+    padding : 30px;
+    text-align: left;
+    .date{
+      .date-icon{
+        font-size : 20px;
+      }
+      display : inline-block;
+      font-size : 15px;
+      color : #75b4d9;
+      padding : 10px;
+      border: 1px solid #e1e6ed;
+      border-radius: 10px;
+      box-shadow:  0px 0px 5px #e1e9f5;
+    }
+    .title{
+      font-size : 30px;
+      //font-weight : bold;
+    }
+    .desc{
+      //text-align: left;
+    }
   }
 }
 
@@ -151,7 +172,24 @@
   border: 1px solid white;
   border-radius: 15px;
   box-shadow: 15px 15px 30px #e1e9f5;
-  //margin-left: 6vw;
- // margin-bottom: 4vw;
+  padding : 20px;
+  .title{
+    text-align: left;
+    padding : 0 0 20px 0;
+  }
+  .bl{
+    border : 1px solid skyblue;
+  }
+  .contents{
+    text-align: left;
+    font-size : small;
+    display : block;
+    .date{
+      font-size : small;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+
 }
 

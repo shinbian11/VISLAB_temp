@@ -10,17 +10,28 @@
             <div class = "left">
               <div *ngFor="let n of News">
                 <div class = "left-list">
-                  <div>{{n.title}}</div>
-                  <div>{{n.description}}</div>
-                  <div>{{n.date}}</div>  
-                  <!-- <div>title</div>
-                  <div>description</div>
-                  <div>date</div>  -->
+                  <div class = "date">
+                    <mat-icon class = "date-icon">date_range</mat-icon> {{n.date}}
+                  </div> 
+                  <br><br>
+                  <div class = "title">{{n.title}}</div>
+                  <br>
+                  <div class = "desc">{{n.description}}</div>
+                  
                 </div>
               </div>
             </div>
             <div class = "right">
-              <div>asdf</div>
+
+              <div class = "title">Recent Posts</div>
+              <div class = "bl"></div>
+              <div class = "contents"> 
+                  <div *ngFor="let n of News">
+                    <br>             
+                    <div class = "date">{{n.date}}</div>
+                    <div class = "title">{{n.title}}</div> 
+                  </div>
+              </div>
             </div>
 
           </article>
