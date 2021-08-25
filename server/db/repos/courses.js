@@ -14,11 +14,13 @@ class CoursesRepository {
   // async post()
   // {
   //   const { semesters, ...courseInfo } = req.body;
+  //   console.log('req? ' + req);
+  //   console.log('req.body? ' + req.body);
   //   db.courses.create(courseInfo)
-  //     .then((course) => {
-  //       console.log(course);
-  //       console.log(semesters);
-  //     });
+  //     // .then((course) => {
+  //     //   console.log(course);
+  //     //   console.log(semesters);
+  //     // });
   //   res.send(req.body);
   // }
 
