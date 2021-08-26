@@ -1,7 +1,10 @@
 <div class="layer bg-white-smoke">
   <!-- <article class="banner"></article> -->
-  <app-banner></app-banner>
-  <div class="empty-space"></div>
+  <!-- <app-banner></app-banner> -->
+  <div class = "banner">
+    NEWS
+  </div>
+  <!-- <div class="empty-space"></div> -->
 
   <div class="bg-white-smoke">
       <div class="layer-inner">
@@ -11,13 +14,13 @@
               <div *ngFor="let n of News">
                 <div class = "left-list">
                   <div class = "date">
-                    <mat-icon class = "date-icon">date_range</mat-icon> {{n.date}}
+                    <mat-icon class = "date-icon">date_range</mat-icon>{{n.date}} 
                   </div> 
-                  <br><br>
-                  <div class = "title">{{n.title}}</div>
-                  <br>
-                  <div class = "desc">{{n.description}}</div>
                   
+                  <div class = "title">{{n.title}}</div> <!--각 news 별 상세 페이지 구현한 뒤 routerLink 로 연결!-->
+                  
+                  <div class = "desc">{{n.description}}</div>
+                  <div class = "readmore">Read More</div> <!--각 news 별 상세 페이지 구현한 뒤 routerLink 로 연결!-->
                 </div>
               </div>
             </div>

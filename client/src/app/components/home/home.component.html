@@ -173,6 +173,7 @@
         <section class="research">
           <h1 class="title">Research</h1>
           <br><br>
+
           <ul class="example-collection">
       
             <li class="example-item">
@@ -193,16 +194,16 @@
             </li>
             <span class="empty-space-between-item"></span>
 
-            <li class="indicator-item">
-              <a routerLink="/research"><div class="title">View<br> All Research</div></a>
-            </li>
           </ul>
+
+          <a routerLink="/research"><div class="viewall">View All</div></a>
+
         </section>
       
         <div class="empty-space"></div>
       
         <section class="publication">
-          <h1 class="title">Publication</h1>
+          <h1 class="title">Publications</h1>
           <br><br>
           <ul class="example-collection">
 
@@ -223,12 +224,11 @@
               <a><h6 class="title">User<br> Interaction</h6></a>
             </li>
             <span class="empty-space-between-item"></span>
-
-            <li class="indicator-item">
-              <a routerLink="/publications"><div class="title">View<br> All Publication</div></a>
-            </li>
             
           </ul>
+
+          <a routerLink="/publications"><div class="viewall">View All</div></a>
+
         </section>
       </article>
       <!-- home-publication end-->
@@ -245,7 +245,7 @@
               <th>Views</th>
             </tr>
             <tr *ngFor = "let n of News">
-              <td>{{n.date}}</td>
+              <td class= "date">{{n.date}}</td>
               <td><a>{{n.title}}</a></td>
               <td>100</td>
             </tr>

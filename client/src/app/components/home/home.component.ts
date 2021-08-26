@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   
   data : Date;
   News : INews[]=[];
+  monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   ngOnInit(): void {
     this.ns.getAll().subscribe(News => {
@@ -36,9 +37,11 @@ export class HomeComponent implements OnInit {
   }
   
   ChangeDate(date) : string {
-    this.data = new Date(date)
+    this.data = new Date(date);
+
     //console.log(this.data.getFullYear()+'-' + (this.data.getMonth()+1) + '-'+this.data.getDate());
-    return this.data.getFullYear()+'-' + (this.data.getMonth()+1) + '-'+this.data.getDate();
+    return (this.monthNames[this.data.getMonth()] + ' ' + this.data.getDate() + ', ' + this.data.getFullYear());
+    
   }
 
 }

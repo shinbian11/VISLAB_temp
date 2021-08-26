@@ -19,7 +19,14 @@ export class NewsComponent implements OnInit {
 
   ngOnInit(): void {
     this.ns.getAll().subscribe(News => {
-       this.News = News.sort((a, b) => b.id - a.id);
+      
+       //최근 뉴스일수록 추가하면 id 값은 커지니까 (내림차순 정렬)
+       News = News.sort((a, b) => b.id - a.id); 
+
+       //최근 뉴스 3개만 보여주기
+       this.News[0] = News[0];
+       this.News[1] = News[1];
+       this.News[2] = News[2];
 
        //e.g.) (날짜 형식 변환) 2021-08-21T15:00:00.000Z 의 Date 형식을 2021-08-21 string 형식으로 변환
        this.News.forEach(element => element.date = this.ChangeDate(element.date)) 
