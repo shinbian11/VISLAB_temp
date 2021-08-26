@@ -6,8 +6,8 @@ const { GET, DELETE, POST, PUT } = require('./common/methods');
 const { db } = require('../db');
 
 
-//질문 1) const { semesters, ...courseInfo } .. 이거는 어떤 기준이지..? page 마다 다르게 설정해야 하나? (12번째 줄)
-//질문 2) PUT(router,) ..여기 url은 어떤 기준으로 정하지?
+//질문 1) const { semesters, ...courseInfo } .. 이거는 어떤 기준이지..? page 마다 다르게 설정해야 하나? (12번째 줄) 
+//질문 2) PUT(router,) ..여기 url은 어떤 기준으로 정하지? > 우리들만의 규칙을 정해서 그대로!
 //질문 3) response를 맞춰서 보내줘야 종료를 정상적으로 한다는 의미가 자세히 이해 되지 않음.
 
 router.post('/c/one', upload.none(), (req, res) => {

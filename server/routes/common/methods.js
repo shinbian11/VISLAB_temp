@@ -1,10 +1,12 @@
 const { verifyToken } = require('./token');
 
 function handleAndRespond(handler) {
+  
   return async (req, res) => {
     try {
       const data = await handler(req);
-      res.json({success: true, data});
+    
+      res.status(200).json({success: true, data});
     } catch (error) {
       res.json({success: false, error: error.message || error});
     }
@@ -15,7 +17,7 @@ function handleAndRespond(handler) {
 function POST(router, url, upload, handler) { router.post(url, upload, handleAndRespond(handler)); }
 function GET(router, url, upload, handler) { router.get(url, upload, verifyToken, handleAndRespond(handler)); }
 function PUT(router, url, upload, handler) { router.get(url, upload, andleAndRespond(handler)); }
-function DELETE(router, url, upload, handler) { router.delete(url, upload, handleAndRespond(handler)); }
+function DELETE(router, url, upload, handler) { router.delete(url, upload, handleAndRespond(handler));  }
 
 function POST_FORM(router, url, upload, handler) { router.post(url, upload, handler); }
 function GET_FORM(router, url, upload, handler) { router.get(url, upload, handler); }
