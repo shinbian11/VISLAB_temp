@@ -4,3 +4,11 @@
 
 # <h2>Issue</h2>
 [변경 사항 / 업데이트 사항](https://github.com/shinbian11/vislab_temp/issues/1) 확인하기!
+
+
+
+# FE 관련 업무 영상 (내가 구현한 부분까지)
+
+https://user-images.githubusercontent.com/59140182/130962338-69af98d9-9efc-43ea-8164-fd4b742d6b1d.mp4
+
+
