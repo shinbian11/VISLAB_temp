@@ -39,7 +39,7 @@
 .research-item {
   display: inline-block;
   //width: calc((1000px - 2vw) / 3);
-  width : auto;
+  width : calc((1050px - 2vw) / 3);
   height: 430px;
   background-color: white;
   border: 1px solid lightgray;
@@ -48,7 +48,7 @@
 
   .detailed-research-info {
     display: none;
-    width: calc((1100px - 2vw) / 3);
+    width: calc((1050px - 2vw) / 3);
     padding: 20px 20px 20px 20px;
     text-align: left;
     white-space: break-spaces;
@@ -73,29 +73,31 @@
 
   .brief-research-info {
 
-    padding: 20px 20px 20px 20px;
-    width: calc((1100px - 2vw) / 3);
+    padding: 10px;
+    width: calc((1050px - 2vw) / 3);
     text-align: left;
     white-space: break-spaces;
 
     img{
-        width : 315px;
+        width : 95%;
         height : 200px;
-       
     }
 
     .research-title {
+      padding-left: 5px;
       color: #00729A;
       font-weight: bold;
       font-size : larger;
     }
 
     .research-member {
+      padding-left: 5px;
       color: orange;
       //font-weight: bold;
     }
     
     .research-desc {
+      padding: 0 15px 0 5px;
       color: black;
       //font-weight: bold;   
     }

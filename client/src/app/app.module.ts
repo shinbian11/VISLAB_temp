@@ -28,7 +28,6 @@ import { SubComponent } from './components/sub/sub.component';
 import { ResearchListComponent } from './components/research-list/research-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MembersListComponent } from './components/members-list/members-list.component';
-import { ChartComponent } from './components/chart/chart.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CoursesListComponent } from './components/courses-list/courses-list.component';
 import { NewsComponent } from './components/news/news.component';
@@ -48,7 +47,6 @@ import { NoticeComponent } from './components/notice/notice.component';
     SubComponent,
     ResearchListComponent,
     MembersListComponent,
-    ChartComponent,
     BannerComponent,
     CoursesListComponent,
     NewsComponent,

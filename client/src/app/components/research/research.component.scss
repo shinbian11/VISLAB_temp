@@ -52,7 +52,18 @@
     background-color: whitesmoke;
   }
 
-  
+  .banner{
+    width : 100%;
+    height : 150px;
+    background: linear-gradient( to right, #89e0cf, #4ea1c2 , #35b3e6);
+    .banner-title{
+        color : #ffffff;
+        //text-align: center;
+        padding-top: 50px;
+        font-size: 30px;
+    }
+  }
+
   .empty-space {
     height: 8vw;
   }

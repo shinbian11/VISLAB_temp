@@ -85,6 +85,18 @@ h6 {
   font-weight: bold;
 }
 
+.banner{
+  width : 100%;
+  height : 150px;
+  background: linear-gradient( to right, #89e0cf, #4ea1c2 , #35b3e6);
+  .banner-title{
+      color : #ffffff;
+      //text-align: center;
+      padding-top: 50px;
+      font-size: 30px;
+  }
+}
+
 div {
   margin: 0;
   padding: 0;
@@ -106,7 +118,7 @@ div {
     display:inline-block;
     vertical-align:middle;
   
-    width: 94vw;
+    width: 1160px;
     max-width: 1160px;
   }
 
@@ -129,8 +141,8 @@ div {
 article{
 
   .undergraduate-graduate-courses {
-    width: 94vw;
-    max-width: 1160px;
+    width: 1160px;
+    //max-width: 1160px;
     text-align: left;
 
     margin-bottom: 8vw;
