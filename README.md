@@ -7,7 +7,7 @@
 
 
 
-# FE 관련 업무 영상 (내가 구현한 부분까지)
+# <h2>FE 관련 업무 영상 (내가 구현한 부분까지)</h2>
 
 https://user-images.githubusercontent.com/59140182/130962338-69af98d9-9efc-43ea-8164-fd4b742d6b1d.mp4
 
